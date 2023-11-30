@@ -73,3 +73,19 @@ body {
 .bg {
 
 }
+
+.a {
+  z-index: 5000;
+}
+
+
+.sidebar {
+  /* display: none; */
+  left: -40rem;
+  transition: .6s ease;
+}
+
+.active {
+  /* display: block; */
+  left: 0;
+}
