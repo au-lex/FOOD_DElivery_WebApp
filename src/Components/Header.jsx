@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <>
 {/* mobile-header */}
-    <header className='flex justify-between px-[.8rem] pt-[1.2rem]'>
+    <header className='flex justify-between  px-[.8rem] pt-[1.2rem]'>
 
 <section className='flex'>
 
