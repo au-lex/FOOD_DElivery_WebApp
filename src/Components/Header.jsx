@@ -41,7 +41,7 @@ const Header = () => {
     </nav>
     </header>
     
-<div className={`sidebar w-[100%] pt-[2rem] px-[1rem] fixed ${openSidebar ? "active": ""}  bg-white a z-50 top-0 bottom-0`}>
+<div className={`sidebar w-[100%] pt-[2rem]  px-[1rem] fixed ${openSidebar ? "active": ""}  bg-white a z-50 top-0 bottom-0`}>
 <section className='flex'>
 
     <div className="logo w-[60px] h-[50px]">
@@ -53,10 +53,37 @@ const Header = () => {
 </section>
 
 <span onClick={toggleSidebar}>< SlClose className='text-[2rem] absolute right-6 
-top-6' /></span>
-<div className="profile py-[2rem]  flex space-x-2 mt-[0rem] shadow-md">
+top-10' /></span>
+
+
+<ul className='py-[4rem] px-[1rem]'  >
+
+
+    <li className='text-[1rem] flex mb-[2.5rem] font-semibold' > <span className='pr-2'>
+        <TbSmartHome className='text-[1.5rem] text-yellow-600  ' /></span>Home</li>
+    <li className='text-[1rem] flex  mb-[2.5rem] font-semibold ' > <span className='pr-2'>
+        <SiIfood className='text-[1.5rem] text-yellow-600 ' /></span> Food Menu</li>
+    <li className='text-[1rem] flex  mb-[2.5rem] font-semibold' > <span className='pr-2'>
+        <MdOutlineInfo className='text-[1.5rem]  text-yellow-600' />
+        </span>About us </li>
+    <li className='text-[1rem] flex  mb-[2.5rem] font-semibold' > <span className='pr-2'>
+        <IoMdContacts className='text-[1.5rem] text-yellow-600 ' /></span>Contact us</li>
+    <li className='text-[1rem] flex  mb-[1.8rem] font-semibold' > <span className='pr-2'>
+        <IoSettingsOutline className='text-[1.4rem] text-yellow-600 ' /></span>Settings</li>
+
+    <li className='text-[1rem] flex  mb-[1.8rem] font-semibold' > <span className='pr-2'>
+        <RiLogoutCircleLine  className='text-[1.4rem] text-yellow-600 ' />
+        </span>Log out</li>
+
+
+
+
+</ul>
+<div className="profile px-2 py-2 rounded-[10px]  flex space-x-2  pb-10">
     <div className="image flex items-center w-[80px] h-[80px]
-     rounded-full bg-slate-300 "></div>
+     rounded-full bg-slate-300 ">
+        <img src="https://bslthemes.com/html/quickeat/assets/img/photo-5.jpg" className='rounded-full h-[100%]' alt="" />
+     </div>
      <div>
 
      <p className=' mt-[.7rem] font-medium'>John Doe</p>
@@ -64,31 +91,6 @@ top-6' /></span>
      </div>
 
 </div>
-
-<ul className='pt-[1rem]' >
-
-
-    <li className='text-[1.5rem] flex mb-[2.5rem] font-semibold' > <span className='pr-2'>
-        <TbSmartHome className='text-[2rem] text-yellow-600  ' /></span>Home</li>
-    <li className='text-[1.5rem] flex  mb-[2.5rem] font-semibold ' > <span className='pr-2'>
-        <SiIfood className='text-[2rem] text-yellow-600 ' /></span> Food Menu</li>
-    <li className='text-[1.5rem] flex  mb-[2.5rem] font-semibold' > <span className='pr-2'>
-        <MdOutlineInfo className='text-[2rem]  text-yellow-600' />
-        </span>About us </li>
-    <li className='text-[1.5rem] flex  mb-[2.5rem] font-semibold' > <span className='pr-2'>
-        <IoMdContacts className='text-[2rem] text-yellow-600 ' /></span>Contact us</li>
-    <li className='text-[1.5rem] flex  mb-[1.8rem] font-semibold' > <span className='pr-2'>
-        <IoSettingsOutline className='text-[2rem] text-yellow-600 ' /></span>Settings</li>
-
-
-        <div className="logout left-0  bottom-0 w-full">
-    <button type="submit" className="bg-yellow-900 hover:bg-red-
-    600  h-[4rem] w-full text-white font-bold uppercase border-none rounded-lg">
-       Log out</button>  
-</div>
-
-</ul>
-
 
 </div>
  

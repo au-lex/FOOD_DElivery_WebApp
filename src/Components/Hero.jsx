@@ -26,7 +26,7 @@ Indulge in a world of flavors with <span className='text-yellow-900 text-[1.5rem
     
     <img src="https://bslthemes.com/html/quickeat/assets/img/photo-1.png" alt=""  
     className='w-[100%] '/>
-    <div className="ad rounded-[20px] w-[100%] h-[8rem] absolute z-50 top-[14rem]
+    <div className="ad rounded-[20px] w-[100%] h-[8rem] absolute z-20 top-[14rem]
      bg-white">
 <div className='flex  items-center h-[8rem]   space-x-4 px-[1rem]'>
 <img src="https://bslthemes.com/html/quickeat/assets/img/photo-2.jpg" alt="" /> 
