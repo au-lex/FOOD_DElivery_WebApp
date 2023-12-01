@@ -67,7 +67,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(90deg, rgba(255,234,234,1) 0%, rgba(255,249,237,1) 100%);
+  /* background: linear-gradient(90deg, rgba(255,234,234,1) 0%, rgba(255,249,237,1) 100%); */
 }
 
 .bg {
@@ -88,4 +88,10 @@ body {
 .active {
   /* display: block; */
   left: 0;
+}
+
+.profile {
+  box-shadow: rgba(14, 30, 37, 0.12)
+   0px 2px 2px 0px, rgba(14, 30, 37, 0.32) 0px 2px 4px 0px;
+   
 }
