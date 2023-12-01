@@ -41,7 +41,9 @@ const Header = () => {
     </nav>
     </header>
     
-<div className={`sidebar w-[100%] pt-[2rem]  px-[1rem] fixed ${openSidebar ? "active": ""}  bg-white a z-50 top-0 bottom-0`}>
+<div className={`sidebar w-[100%]
+ pt-[2rem]  px-[1rem] fixed ${openSidebar ? "active": ""} 
+  bg-white a z-50 top-0  min-h-full`}>
 <section className='flex'>
 
     <div className="logo w-[60px] h-[50px]">
@@ -79,7 +81,7 @@ top-10' /></span>
 
 
 </ul>
-<div className="profile px-2 py-2 rounded-[10px]  flex space-x-2  pb-10">
+<div className="profile px-2 py-2 rounded-[10px]  flex space-x-2  mt-[-2rem]">
     <div className="image flex items-center w-[80px] h-[80px]
      rounded-full bg-slate-300 ">
         <img src="https://bslthemes.com/html/quickeat/assets/img/photo-5.jpg" className='rounded-full h-[100%]' alt="" />
