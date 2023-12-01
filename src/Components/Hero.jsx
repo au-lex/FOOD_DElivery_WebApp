@@ -1,5 +1,6 @@
 import React from 'react'
 import { IoIosStar, IoIosStarHalf } from "react-icons/io";
+import {GiHotMeal} from "react-icons/gi";
 
 const Hero = () => {
   return (
@@ -124,6 +125,18 @@ Track and Enjoy: Sit back, relax, and track your order in real-time. Before you 
     </section>
 
     </div>
+    <div className='fixed  bottom-0 z-50 left-1/2 transform -translate-x-1/2 '>
+
+
+    <div class="container">
+ 
+ <span class="sun sunshine"></span>
+ <span class="sun px-[1rem] pt-[.6rem]">
+    <h1><GiHotMeal className = ' text-[3rem] text-slate-900' /></h1>
+ </span>
+
+</div>
+</div>
     </main>
     
     </>
