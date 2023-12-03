@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import logo from '../assets/images/logo_prev_ui.png'
 import { CgMenuRight } from "react-icons/cg";
-import { FaBagShopping } from "react-icons/fa6";
+
 import { SlClose } from "react-icons/sl";
 import { SiIfood } from "react-icons/si";
 import { TbSmartHome } from "react-icons/tb"
@@ -9,6 +9,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { MdOutlineInfo } from "react-icons/md";
 import { IoMdContacts } from "react-icons/io";
 import { RiLogoutCircleLine } from "react-icons/ri";
+import { Link } from 'react-router-dom';
 const Header = () => {
 
 
@@ -32,7 +33,7 @@ const Header = () => {
 </section>
 
     <nav className='flex pt-[1rem] space-x-12 '>
-        <div><FaBagShopping className='text-[1.6rem] text-yellow-500 cursor-pointer '  /></div>
+        {/* <div><FaBagShopping className='text-[1.6rem] text-yellow-500 cursor-pointer '  /></div> */}
 <div>
     <CgMenuRight className='text-[2.2rem]
      text-yellow-500 cursor-pointer ' onClick={toggleSidebar} />
@@ -58,13 +59,14 @@ const Header = () => {
 top-10' /></span>
 
 
-<ul className='py-[4rem] px-[1rem]'  >
+<ul className='py-[2rem] px-[1rem]'  >
 
 
     <li className='text-[1rem] flex mb-[2.5rem] font-semibold' > <span className='pr-2'>
         <TbSmartHome className='text-[1.5rem] text-yellow-600  ' /></span>Home</li>
-    <li className='text-[1rem] flex  mb-[2.5rem] font-semibold ' > <span className='pr-2'>
-        <SiIfood className='text-[1.5rem] text-yellow-600 ' /></span> Food Menu</li>
+        <Link to="/Menu"><li className='text-[1rem] flex  mb-[2.5rem] font-semibold ' > <span className='pr-2'>
+        
+        <SiIfood className='text-[1.5rem] text-yellow-600 ' /></span> Food Menu</li></Link>
     <li className='text-[1rem] flex  mb-[2.5rem] font-semibold' > <span className='pr-2'>
         <MdOutlineInfo className='text-[1.5rem]  text-yellow-600' />
         </span>About us </li>
@@ -81,7 +83,7 @@ top-10' /></span>
 
 
 </ul>
-<div className="profile px-2 py-2 rounded-[10px]  flex space-x-2  mt-[-2rem]">
+{/* <div className="profile px-2 py-2 rounded-[10px]  flex space-x-2  mt-[-2rem]">
     <div className="image flex items-center w-[80px] h-[80px]
      rounded-full bg-slate-300 ">
         <img src="https://bslthemes.com/html/quickeat/assets/img/photo-5.jpg" className='rounded-full h-[100%]' alt="" />
@@ -92,7 +94,7 @@ top-10' /></span>
      <p className=' font-medium'>aulexc4d2@gmail.com</p>
      </div>
 
-</div>
+</div> */}
 
 </div>
  

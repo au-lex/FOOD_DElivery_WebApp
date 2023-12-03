@@ -165,3 +165,28 @@ body {
     transform: translateX(15px);
   }
 }
+
+
+
+  
+ 
+
+
+
+.h {
+  /* height: 140px;  width: 140px;  */
+ 
+
+ 
+  background: wheat
+  ;
+  padding: .5rem .5rem;
+  border-radius: 10px;
+}
+
+.h img {
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  object-fit: cover; /* This will maintain the aspect ratio and cover the container */
+}

@@ -23,6 +23,8 @@ return ()=> clearTimeout(delay);
     <Header />
 
 <Hero />
+
+
   </div>
     )
 

@@ -1,8 +1,13 @@
 import React from 'react'
+import { useEffect, useState } from 'react';
 import { IoIosStar, IoIosStarHalf } from "react-icons/io";
 import {GiHotMeal} from "react-icons/gi";
 
 const Hero = () => {
+
+    
+
+
   return (
     <>
      {/* hero-mobile */}
@@ -137,6 +142,14 @@ Track and Enjoy: Sit back, relax, and track your order in real-time. Before you 
 
 </div>
 </div>
+
+<section>
+       
+
+        <article>
+          
+        </article>
+      </section>
     </main>
     
     </>
