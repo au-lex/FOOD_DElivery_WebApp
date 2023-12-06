@@ -29,18 +29,60 @@ const FoodMenu = () => {
     </div>
 
     <div className="srch px-[1.5rem] my-[.5rem]">
-        <input type="search" name="" id="" className="w-full py-2 rounded-[20px] " />
+        <input type="search" name="" id="" placeholder="Search meal" 
+        className="w-full border-yellow-800 
+         border-[.2rem] px-4 capitalize text-[15px] placeholder:text-slate-400   placeholder:italic
+         outline-none  py-2 rounded-[20px] " />
     </div>
 
     {/* filter region */}
 
-<section className="flex space-x-4 px-6 py-4 ">
+<section className="flex space-x-4 px-6 py-4  w-[100%]">
 
-<div className="bg-slate-200 w-[100%]   shadow-lg h-[2rem] rounded-[20px] text-center pt-1">Rice</div>
-<div className="bg-slate-200 w-[100%]  shadow-lg h-[2rem] rounded-[20px] text-center pt-1">Beans</div>
-<div className="bg-slate-200 w-[100%] shadow-lg h-[2rem] rounded-[20px] text-center pt-1"> Soup</div>
-<div className="bg-slate-200 w-[100%] shadow-lg h-[2rem] rounded-[20px] text-center pt-1"> Meat</div>
+<div className="bg-slate-000 w-[40%] flex   h-[5rem] rounded-[40px] text-center pt-1">
+  
+  <span>
+    <img className="w-[70px] h-[70px] object-contain rounded-full border-[2px] border-red-600"
+    src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg" alt="" />
+  </span>
+   <span className="pt-[1.5rem] pl-2">Rice</span></div>
 
+
+   <div className="bg-slate-000 w-[40%] flex   h-[5rem] rounded-[40px] text-center pt-1">
+  
+  <span>
+    <img className="w-[70px] h-[70px] object-contain rounded-full border-[2px] border-red-600"
+    src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg" alt="" />
+  </span>
+   <span className="pt-[1.5rem] pl-2">Beans</span></div>
+
+
+   {/* <div className="bg-slate-000 w-[40%] flex   h-[5rem] rounded-[40px] text-center pt-1">
+  
+  <span>
+    <img className="w-[70px] h-[70px] object-contain rounded-full border-[2px] border-red-600"
+    src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg" alt="" />
+  </span>
+   <span className="pt-[1.5rem] pl-2">abacha</span></div>
+
+
+   <div className="bg-slate-000 w-[45%] flex   h-[5rem] rounded-[40px] text-center pt-1">
+  
+  <span>
+    <img className="w-[70px] h-[70px] object-contain rounded-full border-[2px] border-red-600"
+    src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg" alt="" />
+  </span>
+   <span className="pt-[1.5rem] pl-2">Nkwobi</span></div> */}
+
+
+{/* 
+Aulex_0
+12:15 PM (9 minutes ago)
+to me
+
+https://doctorondemand.com/
+https://docs.google.com/document/d/1v16TzNo_HEw1By1Lo-NeRaLjE0aH16FzaFTkPabVO2s/edit?usp=sharing
+https://docs.google.com/document/d/1BANR8lz8m0lPESEfluamG--49htHRbGDEErcCxHR2mo/edit?usp=sharing */}
 
 
 </section>
@@ -48,7 +90,7 @@ const FoodMenu = () => {
 
 
 
-    <div className=' flex flex-wrap justify-center '>
+    <div className=' flex flex-wrap justify-center mt-[1rem] '>
       {data.map((prod, indx) => (
         <section className=' h-[25rem] bg-slate-100   shadow-2xl 
           mx-2 rounded-[20px] my:h-[16rem]   mb-[1rem]'>
@@ -61,12 +103,22 @@ const FoodMenu = () => {
             <div className='flex  justify-between'>
 
           <h2 className='my:text-[12px]'>{prod.title}</h2>
-          <p className='text-[15px] my:text-[15px] font-semibold text-yellow-700 '>#{prod.newPrice}</p>
+         
             </div>
-          <div className='mt-2'>
-            <button className='bg-yellow-500 w-[100%]  border border-red-500
+          <div className='mt-2 flex   justify-between'>
+
+          <p className='text-[20px] my:text-[18px] font-semibold
+           text-yellow-700 '>#{prod.newPrice}</p>
+            {/* <button className='bg-yellow-500 w-[50%]  border border-red-500
              my:text-[12px] text-slate-100
-             rounded-[20px]  h-[2rem]'>   Add to cart</button>
+             rounded-[20px]  h-[2rem]'>   Add to cart</button> */}
+<span className="bg-yellow-500 h-[2.5rem] border-red-500 border-[2px]
+ 
+ w-[2.5rem] p-[8px] rounded-full">
+
+< IoCart className="text-[20px] text-white" />
+</span>
+
           </div>
           </figcaption>
         </div>
@@ -85,3 +137,8 @@ const FoodMenu = () => {
 };
 
 export default FoodMenu;
+
+
+
+
+
