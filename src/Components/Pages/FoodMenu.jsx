@@ -1,12 +1,12 @@
 
-
+import { IoMdNotificationsOutline } from "react-icons/io";
 import { IoCart } from "react-icons/io5";
 import { FaBagShopping } from "react-icons/fa6";
 import React from 'react';
 import data from '../Data/data';
 import bb from '../../assets/images/bgg.jpg'
 import HeaderFooter from "../HeaderFooter";
-
+import { FcSearch } from "react-icons/fc";
 // import Slider from "react-slick";
 
 // import "slick-carousel/slick/slick.css";
@@ -66,7 +66,8 @@ const FoodMenu = () => {
      </div>
 
      <div className=" text-[20px] pt-[.6rem]">Foodie.io</div>
-        <div className="pt-4"><FaBagShopping className='text-[1.6rem]  text-yellow-500
+        <div className="pt-4"><IoMdNotificationsOutline  className='text-[2.2rem] 
+         text-yellow-500
          cursor-pointer '  /></div> 
 
 </div>
@@ -81,11 +82,17 @@ const FoodMenu = () => {
          outline-none  py-2 rounded-[20px] " />
     </div> */}
     <form className="px-[1rem]"> 
-  <label class="block">
-    
-  
-    <input type="text" class="mt-1 block w-full px-3 py-2
+  <label class="block relative">
+    <span className="absolute left-[1rem] top-2">
+
+  <FcSearch className="text-[2rem]" />
+    </span>
+    <input   placeholder="Search all meals......" type="text" class="mt-1 
+    block w-full px-3 py-2 pl-[4rem] 
+    text-[21px]
      bg-white border border-slate-300 rounded-[40px]
+     
+        placeholder:text-[15px]
       text-sm shadow-sm placeholder-slate-400 h-[2.8rem]
       focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500
    
