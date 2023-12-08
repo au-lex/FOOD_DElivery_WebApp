@@ -1,9 +1,13 @@
 import { useState , useEffect} from 'react'
 import './App.css'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import Header from './Components/Header'
 import Hero from './Components/Hero'
 
 import Loaderpage from './Components/OnboardingScreen'
+import HeaderFooter from './Components/HeaderFooter';
 
 function App() {
    const [Loader, SetLoader] = useState(true)
@@ -23,6 +27,8 @@ return ()=> clearTimeout(delay);
     <Header />
 
 <Hero />
+
+{/* <HeaderFooter/> */}
 
 
   </div>

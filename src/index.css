@@ -96,6 +96,15 @@ body {
    
 }
 
+li {
+  list-style: none;
+}
+
+
+.hf {
+  background-color: rgba(0, 0, 0, 0.2);
+  /* filter: blur(10px); */
+}
 
 
 

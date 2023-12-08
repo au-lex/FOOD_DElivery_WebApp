@@ -4,12 +4,58 @@ import { IoCart } from "react-icons/io5";
 import { FaBagShopping } from "react-icons/fa6";
 import React from 'react';
 import data from '../Data/data';
+import bb from '../../assets/images/bgg.jpg'
+import HeaderFooter from "../HeaderFooter";
+
+// import Slider from "react-slick";
+
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 const FoodMenu = () => {
+//   const settings = {
+//     dots: true,
+//     infinite: true,
+//     speed: 500,
+//     slidesToShow: 3,
+//     slidesToScroll: 3,
+//     initialSlide: 0,
+//  autoplay: true,
+//   autoplaySpeed: 2000,
+  
+   
+   
+//     responsive: [
+//       {
+//         breakpoint: 1024,
+//         settings: {
+//           slidesToShow: 2,
+//           slidesToScroll: 2,
+//           infinite: true,
+//           dots: true,
+//         },
+//       },
+//       {
+//         breakpoint: 600,
+//         settings: {
+//           slidesToShow: 2,
+//           slidesToScroll: 1,
+//           initialSlide: 1,
+//         },
+//       },
+//       {
+//         breakpoint: 480,
+//         settings: {
+//           slidesToShow: 1,
+//           slidesToScroll: 1,
+//         },
+//       },
+//     ],
+//   };
   return (
 
 
-    <main main className="bg-slate-100 pt-[1rem]">
+    <main main className="bg-slate-100 pt-[1rem] ">
 
 <div className="cartHa px-[2rem]">
 <div className=" flex  justify-between mb-4">
@@ -28,33 +74,56 @@ const FoodMenu = () => {
     <h1 className="text-[28px] font-meduim">what would you like to <span className="text-yellow-500 font-bold">eat ?</span></h1>
     </div>
 
-    <div className="srch px-[1.5rem] my-[.5rem]">
+    {/* <div className="srch px-[1.5rem] my-[.5rem]">
         <input type="search" name="" id="" placeholder="Search meal" 
         className="w-full border-yellow-800 
-         border-[.2rem] px-4 capitalize text-[15px] placeholder:text-slate-400   placeholder:italic
+         border-[2px] px-4 capitalize text-[15px] placeholder:text-slate-400   placeholder:italic
          outline-none  py-2 rounded-[20px] " />
-    </div>
+    </div> */}
+    <form className="px-[1rem]"> 
+  <label class="block">
+    
+  
+    <input type="text" class="mt-1 block w-full px-3 py-2
+     bg-white border border-slate-300 rounded-[40px]
+      text-sm shadow-sm placeholder-slate-400 h-[2.8rem]
+      focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500
+   
+    "/>
+  </label>
+ 
+</form>
 
     {/* filter region */}
 
 <section className="flex space-x-4 px-6 py-4  w-[100%]">
 
-<div className="bg-slate-000 w-[40%] flex   h-[5rem] rounded-[40px] text-center pt-1">
+
+<div className="bg-slate-000  flex   h-[5rem] rounded-[40px] text-center pt-1">
   
   <span>
-    <img className="w-[70px] h-[70px] object-contain rounded-full border-[2px] border-red-600"
+    <img className="w-[50px] h-[50px] object-contain rounded-full border-[2px] border-red-600"
     src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg" alt="" />
   </span>
-   <span className="pt-[1.5rem] pl-2">Rice</span></div>
+   <span className="pt-[1rem] pl-2">Rice</span></div>
 
 
-   <div className="bg-slate-000 w-[40%] flex   h-[5rem] rounded-[40px] text-center pt-1">
+   <div className="bg-slate-000  flex   h-[5rem] rounded-[40px] text-center pt-1">
   
   <span>
-    <img className="w-[70px] h-[70px] object-contain rounded-full border-[2px] border-red-600"
+    <img className="w-[50px] h-[50px] object-contain rounded-full border-[2px] border-red-600"
     src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg" alt="" />
   </span>
-   <span className="pt-[1.5rem] pl-2">Beans</span></div>
+   <span className="pt-[1rem] pl-2">Beans</span></div>
+
+
+   <div className="bg-slate-000  flex   h-[5rem] rounded-[40px] text-center pt-1">
+  
+  <span>
+    <img className="w-[50px] h-[50px] object-contain rounded-full border-[2px] border-red-600"
+    src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg" alt="" />
+  </span>
+   <span className="pt-[1rem] pl-2">Beans</span></div>
 
 
    {/* <div className="bg-slate-000 w-[40%] flex   h-[5rem] rounded-[40px] text-center pt-1">
@@ -88,6 +157,13 @@ https://docs.google.com/document/d/1BANR8lz8m0lPESEfluamG--49htHRbGDEErcCxHR2mo/
 </section>
 
 
+{/* advert banner */}
+<div className="px-4 rounded-[10px]">
+
+
+<img src={bb} alt="" className="rounded-[10px]"/>
+
+</div>
 
 
     <div className=' flex flex-wrap justify-center mt-[1rem] '>
@@ -105,19 +181,21 @@ https://docs.google.com/document/d/1BANR8lz8m0lPESEfluamG--49htHRbGDEErcCxHR2mo/
           <h2 className='my:text-[12px]'>{prod.title}</h2>
          
             </div>
+            <p className='text-[20px] my:text-[18px] font-semibold
+           text-yellow-700 '>#{prod.newPrice}</p>
           <div className='mt-2 flex   justify-between'>
 
-          <p className='text-[20px] my:text-[18px] font-semibold
-           text-yellow-700 '>#{prod.newPrice}</p>
-            {/* <button className='bg-yellow-500 w-[50%]  border border-red-500
+       
+            <button className='bg-rose-500 w-[100%]  border border-red-500
              my:text-[12px] text-slate-100
-             rounded-[20px]  h-[2rem]'>   Add to cart</button> */}
-<span className="bg-yellow-500 h-[2.5rem] border-red-500 border-[2px]
+             rounded-[20px]  h-[2rem]'>   Add to cart</button>
+
+{/* <span className="bg-yellow-500 h-[2.5rem] border-red-500 border-[2px]
  
  w-[2.5rem] p-[8px] rounded-full">
 
 < IoCart className="text-[20px] text-white" />
-</span>
+</span> */}
 
           </div>
           </figcaption>
@@ -131,6 +209,11 @@ https://docs.google.com/document/d/1BANR8lz8m0lPESEfluamG--49htHRbGDEErcCxHR2mo/
 
 
     </div>
+
+
+{/* menu-footer */}
+
+<HeaderFooter />
 
     </main>
   );

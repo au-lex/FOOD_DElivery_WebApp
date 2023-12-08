@@ -130,7 +130,7 @@ Track and Enjoy: Sit back, relax, and track your order in real-time. Before you 
     </section>
 
     </div>
-    <div className='fixed  bottom-0 z-50 left-1/2 transform -translate-x-1/2 '>
+    {/* <div className='fixed  bottom-0 z-50 left-1/2 transform -translate-x-1/2 '>
 
 
     <div class="container">
@@ -141,7 +141,7 @@ Track and Enjoy: Sit back, relax, and track your order in real-time. Before you 
  </span>
 
 </div>
-</div>
+</div> */}
 
 <section>
        
