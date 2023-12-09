@@ -7,6 +7,17 @@ import data from '../Data/data';
 import bb from '../../assets/images/bgg.jpg'
 import HeaderFooter from "../HeaderFooter";
 import { FcSearch } from "react-icons/fc";
+
+
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
+
 // import Slider from "react-slick";
 
 // import "slick-carousel/slick/slick.css";
@@ -57,6 +68,14 @@ const FoodMenu = () => {
 
     <main main className="bg-slate-100 pt-[1rem] ">
 
+
+
+
+
+
+
+
+
 <div className="cartHa px-[2rem]">
 <div className=" flex  justify-between mb-4">
     <div className="image flex  w-[60px] h-[60px]
@@ -75,12 +94,7 @@ const FoodMenu = () => {
     <h1 className="text-[28px] font-meduim">what would you like to <span className="text-yellow-500 font-bold">eat ?</span></h1>
     </div>
 
-    {/* <div className="srch px-[1.5rem] my-[.5rem]">
-        <input type="search" name="" id="" placeholder="Search meal" 
-        className="w-full border-yellow-800 
-         border-[2px] px-4 capitalize text-[15px] placeholder:text-slate-400   placeholder:italic
-         outline-none  py-2 rounded-[20px] " />
-    </div> */}
+    
     <form className="px-[1rem]"> 
   <label class="block relative">
     <span className="absolute left-[1rem] top-2">
@@ -103,66 +117,79 @@ const FoodMenu = () => {
 
     {/* filter region */}
 
-<section className="flex space-x-4 px-6 py-4  w-[100%]">
 
 
-<div className="bg-slate-000  flex   h-[5rem] rounded-[40px] text-center pt-1">
+    <Swiper
+      // install Swiper modules
+      modules={[Navigation, Pagination, A11y]}
+      spaceBetween={1}
+      slidesPerView={3.5}
+      // navigation
+      // pagination={{ clickable: true }}
+      // scrollbar={{ draggable: true }}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log('slide change')}
+    >
+      <SwiperSlide>
+      <div className="bg-slate-000  flex   h-[5rem] rounded-[40px] text-center pt-1">
   
   <span>
-    <img className="w-[50px] h-[50px] object-contain rounded-full border-[2px] border-red-600"
+    <img className="w-[80px] h-[80px] object-contain ml-4 rounded-full border-[2px] border-red-600"
     src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg" alt="" />
+   <span className="pt-[1rem] pl-2">Rice dish</span>
   </span>
-   <span className="pt-[1rem] pl-2">Rice</span></div>
+   </div>
+</SwiperSlide>
+     
 
 
-   <div className="bg-slate-000  flex   h-[5rem] rounded-[40px] text-center pt-1">
+<SwiperSlide>
+      <div className="bg-slate-000  flex   h-[5rem] rounded-[40px] text-center pt-1">
   
   <span>
-    <img className="w-[50px] h-[50px] object-contain rounded-full border-[2px] border-red-600"
+    <img className="w-[80px] h-[80px] object-contain ml-4 rounded-full border-[2px] border-red-600"
     src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg" alt="" />
+   <span className="pt-[1rem] pl-2">Beans dishe</span>
   </span>
-   <span className="pt-[1rem] pl-2">Beans</span></div>
+   </div>
+</SwiperSlide>
 
 
-   <div className="bg-slate-000  flex   h-[5rem] rounded-[40px] text-center pt-1">
+<SwiperSlide>
+      <div className="bg-slate-000  flex   h-[5rem] rounded-[40px] text-center pt-1">
   
   <span>
-    <img className="w-[50px] h-[50px] object-contain rounded-full border-[2px] border-red-600"
+    <img className="w-[80px] h-[80px] object-contain ml-4 rounded-full border-[2px] border-red-600"
     src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg" alt="" />
+   <span className="pt-[1rem] pl-2">Abacha</span>
   </span>
-   <span className="pt-[1rem] pl-2">Beans</span></div>
+   </div>
+</SwiperSlide>
 
 
-   {/* <div className="bg-slate-000 w-[40%] flex   h-[5rem] rounded-[40px] text-center pt-1">
+<SwiperSlide>
+      <div className="bg-slate-000  flex   h-[5rem] rounded-[40px] text-center pt-1">
   
   <span>
-    <img className="w-[70px] h-[70px] object-contain rounded-full border-[2px] border-red-600"
+    <img className="w-[80px] h-[80px] ml-4 object-contain rounded-full border-[2px] border-red-600"
     src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg" alt="" />
+   <span className="pt-[1rem] pl-2">Pepper soup</span>
   </span>
-   <span className="pt-[1.5rem] pl-2">abacha</span></div>
+   </div>
+</SwiperSlide>
 
-
-   <div className="bg-slate-000 w-[45%] flex   h-[5rem] rounded-[40px] text-center pt-1">
+<SwiperSlide>
+      <div className="bg-slate-000  flex   h-[5rem] rounded-[40px] text-center pt-1">
   
   <span>
-    <img className="w-[70px] h-[70px] object-contain rounded-full border-[2px] border-red-600"
+    <img className="w-[80px] h-[80px] object-contain rounded-full ml-4 border-[2px] border-red-600"
     src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg" alt="" />
+   <span className="pt-[1rem] pl-2">Chicken</span>
   </span>
-   <span className="pt-[1.5rem] pl-2">Nkwobi</span></div> */}
-
-
-{/* 
-Aulex_0
-12:15 PM (9 minutes ago)
-to me
-
-https://doctorondemand.com/
-https://docs.google.com/document/d/1v16TzNo_HEw1By1Lo-NeRaLjE0aH16FzaFTkPabVO2s/edit?usp=sharing
-https://docs.google.com/document/d/1BANR8lz8m0lPESEfluamG--49htHRbGDEErcCxHR2mo/edit?usp=sharing */}
-
-
-</section>
-
+   </div>
+</SwiperSlide>
+      ...
+    </Swiper>
 
 {/* advert banner */}
 <div className="px-4 rounded-[10px]">
