@@ -84,7 +84,7 @@ const FoodMenu = () => {
         className='rounded-full w-[100%]' alt="" />
      </div>
 
-     <div className=" text-[20px] pt-[.6rem]">Foodie.io</div>
+     <div className=" text-[16px] pt-[.6rem]">Foodie.io</div>
         <div className="pt-4"><IoMdNotificationsOutline  className='text-[2.2rem] 
          text-yellow-500
          cursor-pointer '  /></div> 
@@ -134,7 +134,7 @@ const FoodMenu = () => {
       <div className="bg-slate-000  flex   h-[5rem] rounded-[40px] text-center pt-1">
   
   <span>
-    <img className="w-[80px] h-[80px] object-contain ml-4 rounded-full border-[2px] border-red-600"
+    <img className="w-[80px] h-[80px] object-contain ml-4 rounded-full border-[2px] border-yellow-600"
     src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg" alt="" />
    <span className="pt-[1rem] pl-2">Rice dish</span>
   </span>
@@ -147,7 +147,7 @@ const FoodMenu = () => {
       <div className="bg-slate-000  flex   h-[5rem] rounded-[40px] text-center pt-1">
   
   <span>
-    <img className="w-[80px] h-[80px] object-contain ml-4 rounded-full border-[2px] border-red-600"
+    <img className="w-[80px] h-[80px] object-contain ml-4 rounded-full border-[2px] border-yellow-600"
     src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg" alt="" />
    <span className="pt-[1rem] pl-2">Beans dishe</span>
   </span>
@@ -159,7 +159,7 @@ const FoodMenu = () => {
       <div className="bg-slate-000  flex   h-[5rem] rounded-[40px] text-center pt-1">
   
   <span>
-    <img className="w-[80px] h-[80px] object-contain ml-4 rounded-full border-[2px] border-red-600"
+    <img className="w-[80px] h-[80px] object-contain ml-4 rounded-full border-[2px] border-yellow-600"
     src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg" alt="" />
    <span className="pt-[1rem] pl-2">Abacha</span>
   </span>
@@ -171,7 +171,7 @@ const FoodMenu = () => {
       <div className="bg-slate-000  flex   h-[5rem] rounded-[40px] text-center pt-1">
   
   <span>
-    <img className="w-[80px] h-[80px] ml-4 object-contain rounded-full border-[2px] border-red-600"
+    <img className="w-[80px] h-[80px] ml-4 object-contain rounded-full border-[2px] border-yellow-600"
     src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg" alt="" />
    <span className="pt-[1rem] pl-2">Pepper soup</span>
   </span>
@@ -182,7 +182,7 @@ const FoodMenu = () => {
       <div className="bg-slate-000  flex   h-[5rem] rounded-[40px] text-center pt-1">
   
   <span>
-    <img className="w-[80px] h-[80px] object-contain rounded-full ml-4 border-[2px] border-red-600"
+    <img className="w-[80px] h-[80px] object-contain rounded-full ml-4 border-[2px] border-yellow-600"
     src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg" alt="" />
    <span className="pt-[1rem] pl-2">Chicken</span>
   </span>
@@ -220,7 +220,7 @@ const FoodMenu = () => {
           <div className='mt-2 flex   justify-between'>
 
        
-            <button className='bg-rose-500 w-[100%]  border border-red-500
+            <button className='bg-yellow-600 w-[100%]  border border-red-500
              my:text-[12px] text-slate-100
              rounded-[20px]  h-[2rem]'>   Add to cart</button>
 
