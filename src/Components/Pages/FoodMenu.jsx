@@ -1,8 +1,10 @@
 
+import React, { useState } from 'react';
+import ReactPaginate from 'react-paginate';
 import { IoMdNotificationsOutline } from "react-icons/io";
+
 import { IoCart } from "react-icons/io5";
 import { FaBagShopping } from "react-icons/fa6";
-import React from 'react';
 import data from '../Data/data';
 import bb from '../../assets/images/bgg.jpg'
 import HeaderFooter from "../HeaderFooter";
@@ -13,17 +15,30 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
 import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-
-// import Slider from "react-slick";
-
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+//
+const itemsPerPage = 10;
 
 const FoodMenu = () => {
+
+
+
+  const [currentPage, setCurrentPage] = useState(0);
+  const [isLoading, setIsLoading] = useState(false);
+  const [pageL, setPageL] = useState(false); // Add this line
+
+  const handlePageChange = (selectedPage) => {
+    setIsLoading(true);
+    setPageL(true);
+    setTimeout(() => {
+      setCurrentPage(selectedPage.selected);
+      setIsLoading(false);
+      setPageL(false);
+    }, 1000);
+  };
+
+  const offset = currentPage * itemsPerPage;
+  const currentItems = data.slice(offset, offset + itemsPerPage);
 //   const settings = {
 //     dots: true,
 //     infinite: true,
@@ -198,11 +213,12 @@ const FoodMenu = () => {
 <img src={bb} alt="" className="rounded-[10px]"/>
 
 </div>
-
-
-    <div className=' flex flex-wrap justify-center mt-[1rem] '>
-      {data.map((prod, indx) => (
-        <section className=' h-[25rem] bg-slate-100   shadow-2xl 
+    <div className="flex flex-wrap justify-center mt-[1rem]">
+        {isLoading ? (
+          <div className='bg-red-500 top-0 bottom-0 left-0 z-50 right-0  h-screen absolute w-full'>Loading...</div> // Replace this with your Loader component
+        ) : (
+          currentItems.map((prod, indx) => (
+               <section className=' h-[25rem] bg-slate-100   shadow-2xl 
           mx-2 rounded-[20px] my:h-[16rem]   mb-[1rem]'>
 
 
@@ -234,17 +250,30 @@ const FoodMenu = () => {
           </div>
           </figcaption>
         </div>
-        {/* <div className=''>
-
-          <h2 className='text-center'>{prod.title}</h2>
-        </div> */}
+       
         </section>
-      ))}
+          ))
+        )}
+      </div>
 
-
-    </div>
-
-
+  
+<div className='px-[2rem] pb-[5rem]'>
+  
+  {/* Pagination component */}
+  <ReactPaginate
+        pageCount={Math.ceil(data.length / itemsPerPage)}
+        pageRangeDisplayed={3}
+        marginPagesDisplayed={1}
+        onPageChange={handlePageChange}
+        containerClassName={'pagination '}
+        activeClassName={'active'}
+        breakClassName={'break-me'}
+        pageClassName={'page-me '}
+        previousClassName={'previous-me '}
+        nextClassName={'next-me '}
+      />
+      </div>  
+    
 {/* menu-footer */}
 
 <HeaderFooter />
