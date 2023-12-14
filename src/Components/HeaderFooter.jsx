@@ -4,6 +4,9 @@ import { FaRegHeart } from "react-icons/fa6";
 import { FaRegUser } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
 import { FcSearch } from "react-icons/fc";
+
+import { Link } from 'react-router-dom';
+
 const HeaderFooter = () => {
   return (
     <div>
@@ -15,8 +18,10 @@ const HeaderFooter = () => {
 
 <ul   className='flex justify-between px-[1rem]    pt-[.8rem]'>
 
-<li> <span className=' block p-2 rounded-full bg-yellow00 border-b-[6px] border-b-yellow-500 '>
+<li> <span className=' block p-2 rounded-full bg-yellow00 border-b-[6px] border-b-slate-100 '>
+  <Link to={'/'}>
 <TbSmartHome  className='text-[1.7rem] text-slate-100 '/>
+</Link>
     </span></li>
 <li> <span className='  block p-2 rounded-full bg-yellow-00 '>
 < FaRegHeart  className='text-[1.6rem] text-slate-100 relative'/>
