@@ -92,22 +92,32 @@ const FoodMenu = () => {
 
 
 
-<div className="cartHa px-[2rem]">
-<div className=" flex  justify-between mb-4">
+<div className="cartHa px-[1rem]">
+<div className=" flex  justify-between mb-4 bg-slate-100 
+ shadow-lg backdrop-blur-[15px] bg-opacity-80  fixed h-[6rem] pt-[.7rem] w-full z-50 px-2 top-0 left-0 right-0
+">
+  <div  className='image flex pt-1'>
+
+  
     <div className="image flex  w-[60px] h-[60px]
      rounded-full  ">
         <img src="https://bslthemes.com/html/quickeat/assets/img/photo-5.jpg" 
         className='rounded-full w-[100%]' alt="" />
+        </div>
+        <section>
+
+     <div className=" text-[18px] ml-4 pt-[.6rem] text-yellow-500"> hi dear.. Welcome ,</div>
+     <div className=" text-[20px] font-semibold ml-4 ">Script dev</div>
+        </section>
      </div>
 
-     {/* <div className=" text-[16px] pt-[.6rem]">Foodie.io</div> */}
         <div className="pt-4"><IoMdNotificationsOutline  className='text-[2.2rem] 
          text-yellow-500
          cursor-pointer '  /></div> 
 
 </div>
     {/* <h6 className=" text-[20px]">hello jaminel,</h6> */}
-    <h1 className="text-[28px] font-meduim">what would you like to <span className="text-yellow-500 font-bold">eat ?</span></h1>
+    <h1 className="text-[28px] mt-[6rem] font-meduim">what would you like to <span className="text-yellow-500 font-bold">eat ?</span></h1>
     </div>
 
     
@@ -216,7 +226,10 @@ const FoodMenu = () => {
 </div>
     <div className="flex flex-wrap justify-center mt-[1rem]">
         {isLoading ? (
-          <div className='bg-red-500 top-0 bottom-0 left-0 z-50 right-0  h-screen absolute w-full'>Loading...</div> // Replace this with your Loader component
+          <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-slate-900 bg-opacity-90 z-50">
+          {/* <div className="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12 mb-4"></div> */}
+          <div className="loader ease-linear rounded-full border-t-4 border-b-4 border-gray-200 h-12 w-12 animate-spin"></div>
+        </div>// Replace this with your Loader component
         ) : (
           currentItems.map((prod, indx) => (
                <section className=' h-[25rem] bg-slate-100   shadow-2xl 
