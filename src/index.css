@@ -238,6 +238,11 @@ li {
 }
 
 
+.b {
+ 
+  border-bottom: .8px solid rgb(202, 190, 190);
+}
+
 .ft {
   background-color: #181717;
 }
