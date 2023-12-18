@@ -232,7 +232,12 @@ li {
   border-radius: 4px;
 }
 
-.active {
-  background-color: #007bff;
+.activee {
+  background-color: #007bff; 
   color: #fff;
+}
+
+
+.ft {
+  background-color: #181717;
 }

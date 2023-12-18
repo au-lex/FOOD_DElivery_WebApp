@@ -9,6 +9,7 @@ import data from '../Data/data';
 import bb from '../../assets/images/bgg.jpg'
 import HeaderFooter from "../HeaderFooter";
 import { FcSearch } from "react-icons/fc";
+import Footer from '../Footer';
 
 
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
@@ -99,7 +100,7 @@ const FoodMenu = () => {
         className='rounded-full w-[100%]' alt="" />
      </div>
 
-     <div className=" text-[16px] pt-[.6rem]">Foodie.io</div>
+     {/* <div className=" text-[16px] pt-[.6rem]">Foodie.io</div> */}
         <div className="pt-4"><IoMdNotificationsOutline  className='text-[2.2rem] 
          text-yellow-500
          cursor-pointer '  /></div> 
@@ -257,16 +258,16 @@ const FoodMenu = () => {
       </div>
 
   
-<div className='px-[2rem] pb-[5rem]'>
+<div className='px-[2rem] '>
   
   {/* Pagination component */}
   <ReactPaginate
         pageCount={Math.ceil(data.length / itemsPerPage)}
-        pageRangeDisplayed={3}
-        marginPagesDisplayed={1}
+        pageRangeDisplayed={2}
+        marginPagesDisplayed={0}
         onPageChange={handlePageChange}
         containerClassName={'pagination '}
-        activeClassName={'active'}
+        activeClassName={'activee'}
         breakClassName={'break-me'}
         pageClassName={'page-me '}
         previousClassName={'previous-me '}
@@ -275,6 +276,7 @@ const FoodMenu = () => {
       </div>  
     
 {/* menu-footer */}
+<Footer className = 'mt-[-4rem]'/>
 
 <HeaderFooter />
 

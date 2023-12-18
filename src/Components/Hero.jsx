@@ -12,10 +12,10 @@ const Hero = () => {
     <>
      {/* hero-mobile */}
 <main className='px-[1rem] '> 
-<figure className='bg'>
+<figure className='bg lg:flex lg:justify-between lg:px-[4rem]'>
 
 
-<figcaption className='pt-[3rem] text-slate-800'>
+<figcaption className='pt-[3rem] text-slate-800 lg:w-[40%]'>
     <h1 className='text-[2.4rem] font-bold leading-[48px] text-slate-800'>The Best Restaurants In Your Home</h1>
     <p className='w-[100%] py-[1.2rem] text-[15px]'>Crave, Tap, Enjoy!
 
@@ -28,7 +28,7 @@ Indulge in a world of flavors with <span className='text-yellow-900 text-[1.5rem
  </div>
 </figcaption>
    
-       <div className=" w-[340px] h-[380px] mt-[2rem] relative">
+       <div className=" w-[340px] h-[380px] lg:w-[500px] lg:h-[500px] mt-[2rem] relative">
     
     <img src="https://bslthemes.com/html/quickeat/assets/img/photo-1.png" alt=""  
     className='w-[100%] '/>
@@ -56,7 +56,7 @@ Indulge in a world of flavors with <span className='text-yellow-900 text-[1.5rem
 
 
 {/* ---------------how it works----- */}
-<div className='flex justify-center' >
+<div className=' flex justify-center' >
 
 
     <section className=''>
@@ -68,13 +68,13 @@ Indulge in a world of flavors with <span className='text-yellow-900 text-[1.5rem
       we believe in more than just delivering food.
        We're on a mission to redefine the way you
         experience meals
-        . Our curated selection 
+         . Our curated selection 
         of top-notch restaurants goes beyond the ordinary
         , offering a diverse array of cuisines that cater to every taste.</p>
 </div>
 
 
-<div className="deliveryProcess mt-[4rem]">
+<div className="deliveryProcess mt-[4rem] lg:flex">
     <figure>
         <div className='flex justify-center'>
             <img src="https://bslthemes.com/html/quickeat/assets/img/illustration-1.png" alt="" />
@@ -108,7 +108,7 @@ Indulge in a world of flavors with <span className='text-yellow-900 text-[1.5rem
     </figure>
 
     <figure>
-        <div className='flex justify-center'>
+        <div className='flex justify-center '>
             <img src="https://bslthemes.com/html/quickeat/assets/img/illustration-3.png" alt="" />
         </div>
         <figcaption>

@@ -7,7 +7,7 @@ import Header from './Components/Header'
 import Hero from './Components/Hero'
 
 import Loaderpage from './Components/OnboardingScreen'
-import HeaderFooter from './Components/HeaderFooter';
+import Footer from './Components/Footer';
 
 function App() {
    const [Loader, SetLoader] = useState(true)
@@ -30,7 +30,7 @@ return ()=> clearTimeout(delay);
 
 {/* <HeaderFooter/> */}
 
-
+<Footer />
   </div>
     )
 
