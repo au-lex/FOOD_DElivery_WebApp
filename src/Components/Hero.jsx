@@ -13,10 +13,10 @@ const Hero = () => {
     <>
      {/* hero-mobile */}
 <main className='px-[1rem] '> 
-<figure className='bg lg:flex lg:justify-between lg:px-[4rem]'>
+<figure className='bg lg:flex lg:justify-between  lg:px-[4rem]'>
 
 
-<figcaption className='pt-[3rem] text-slate-800 lg:w-[40%]'>
+<figcaption className='pt-[6rem] text-slate-800 lg:w-[40%]'>
     <h1 className='text-[2.4rem] font-bold leading-[48px] text-slate-800'>The Best Restaurants In Your Home</h1>
     <p className='w-[100%] py-[1.2rem] text-[15px]'>Crave, Tap, Enjoy!
 
@@ -141,7 +141,7 @@ Track and Enjoy: Sit back, relax, and track your order in real-time. Before you 
        </div>
 
        <div className="desc">
-        <h2 className='text-[2rem] text-gray-800  w-[95%] font-semibold'>Food from your favorite restaurants to your table</h2>
+        <h2 className='text-[2rem] text-gray-800  w-[100%] font-semibold'>Food from your favorite restaurants to your table</h2>
         <p className='py-[1.5rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
              Accusamus voluptate blanditiis, cupiditate officia aut
               perspiciatis eius asperiores a, doloremque fugiat atque,
@@ -166,18 +166,18 @@ Track and Enjoy: Sit back, relax, and track your order in real-time. Before you 
        
 
         <span className='flex justify-center mt-4 bg-white shadow-md rounded-[10px]'>
-    <h1 className='text-[4rem] font-bold text-yellow-500 '>24</h1>
-     <p className='pt-4 text-[20px]  pl-[20px]  w-[50%]'>online availabilty</p>
+    <h1 className='text-[3rem] font-bold text-yellow-500 '>24</h1>
+     <p className='pt-1 text-[20px]  pl-[20px]  w-[50%]'>online availabilty</p>
 </span>
 
 <span className='flex justify-center my-[4rem] shadow-md rounded-[10px]'>
-    <h1 className='text-[4rem] font-bold text-yellow-500 '>976</h1>
-     <p className='pt-4 text-[20px]  pl-[20px]  w-[50%]'>satisfied customers</p>
+    <h1 className='text-[3rem] font-bold text-yellow-500 '>976</h1>
+     <p className='pt-1 text-[20px]  pl-[20px]  w-[50%]'>satisfied customers</p>
 </span>
 
 <span className='flex justify-center mt-4 shadow-md rounded-[10px]'>
-    <h1 className='text-[4rem] font-bold text-yellow-500 '>1k+</h1>
-     <p className='pt-4 text-[20px]  pl-[20px]  w-[40%]'>food delivered</p>
+    <h1 className='text-[3rem] font-bold text-yellow-500 '>1k+</h1>
+     <p className='pt-1 text-[20px]  pl-[20px]  w-[40%]'>food delivered</p>
 </span>
 
 </div>
@@ -188,18 +188,18 @@ Track and Enjoy: Sit back, relax, and track your order in real-time. Before you 
 
       <section className='flex justify-center mt-[4rem]'>
         <div>
-            <h1>what customers say about us</h1>
+            <h1 className='text-[2rem]  leading-[40px] text-slate-800 font-semibold'>What customers say about us</h1>
 
 <div>
-    <p>"I love how easy it is to find new restaurants on FOODIE.oi.
+    <p className='my-4'>"I love how easy it is to find new restaurants on FOODIE.oi.
          The variety is impressive, and the delivery is always prompt!" </p>
          <div className='flex'>
-            <div className='w-[80px] h-[80px] bg-slate-400 rounded-full'>
+            <div className='w-[50px] h-[50px] bg-slate-400 rounded-full'>
 
             </div>
             <span className='ml-2'>
 
-            <h1 className='font-medium pt-[2rem] text-lg'>John Doe</h1>
+            <h1 className='font-medium pt-[.2rem] text-lg'>John Doe</h1>
             <span className='flex'>
 
             <FaStar className='text-yellow-500' />
@@ -211,7 +211,7 @@ Track and Enjoy: Sit back, relax, and track your order in real-time. Before you 
          </div>
 </div>
 
-            <div>
+            <div className='mt-[4rem]'>
                 <img src="https://bslthemes.com/html/quickeat/assets/img/photo-4.png" alt="" />
             </div>
         </div>
