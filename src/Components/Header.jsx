@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <>
 {/* mobile-header */}
-    <header className='flex justify-between  px-[.8rem] pt-[.6rem]'>
+    <header className='flex justify-between  backdrop-blur-[15px]  fixed  w-full  z-50  px-[.8rem] pt-[.6rem]'>
 
 <section className='flex'>
 

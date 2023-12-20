@@ -82,7 +82,7 @@ const FoodMenu = () => {
   return (
 
 
-    <main main className="bg-slate-100 pt-[1rem] ">
+    <main main className="bg-white pt-[1rem] ">
 
 
 
@@ -93,31 +93,32 @@ const FoodMenu = () => {
 
 
 <div className="cartHa px-[1rem]">
-<div className=" flex  justify-between mb-4 bg-slate-100 
- shadow-lg backdrop-blur-[15px] bg-opacity-80  fixed h-[6rem] pt-[.7rem] w-full z-50 px-2 top-0 left-0 right-0
+<div className=" flex  justify-between mb-4 bg-white 
+  backdrop-blur-[15px] bg-opacity-80  shadow-md fixed h-[5rem] 
+  pt-[.7rem] w-full z-50 px-2 top-0 left-0 right-0
 ">
   <div  className='image flex pt-1'>
 
   
-    <div className="image flex  w-[60px] h-[60px]
+    <div className="image flex  w-[50px] h-[50px]
      rounded-full  ">
         <img src="https://bslthemes.com/html/quickeat/assets/img/photo-5.jpg" 
         className='rounded-full w-[100%]' alt="" />
         </div>
         <section>
 
-     <div className=" text-[10px] ml-4 pt-[1rem] text-yellow-500"> hi dear.. Welcome ,</div>
+     <div className=" text-[10px] ml-4 pt-[.5rem] text-yellow-500"> hi dear.. Welcome ,</div>
      <div className=" text-[12px] font-semibold ml-4 ">Script dev</div>
         </section>
      </div>
 
-        <div className="pt-4"><IoMdNotificationsOutline  className='text-[2.2rem] 
+        <div className="pt-2"><IoMdNotificationsOutline  className='text-[2rem] 
          text-yellow-500
          cursor-pointer '  /></div> 
 
 </div>
     {/* <h6 className=" text-[20px]">hello jaminel,</h6> */}
-    <h1 className="text-[28px] mt-[6rem] font-meduim">what would you like to <span className="text-yellow-500 font-bold">eat ?</span></h1>
+    <h1 className="text-[26px] mt-[6rem] font-meduim">what would you like to <span className="text-yellow-500 font-bold">eat ?</span></h1>
     </div>
 
     
@@ -125,7 +126,7 @@ const FoodMenu = () => {
   <label class="block relative">
     <span className="absolute left-[1rem] top-2">
 
-  <FcSearch className="text-[2rem]" />
+  <FcSearch className="text-[1.8rem]" />
     </span>
     <input   placeholder="Search all meals......" type="text" class="mt-1 
     block w-full px-3 py-2 pl-[4rem] 
