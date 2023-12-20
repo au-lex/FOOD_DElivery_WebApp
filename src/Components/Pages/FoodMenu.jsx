@@ -106,8 +106,8 @@ const FoodMenu = () => {
         </div>
         <section>
 
-     <div className=" text-[18px] ml-4 pt-[.6rem] text-yellow-500"> hi dear.. Welcome ,</div>
-     <div className=" text-[20px] font-semibold ml-4 ">Script dev</div>
+     <div className=" text-[10px] ml-4 pt-[1rem] text-yellow-500"> hi dear.. Welcome ,</div>
+     <div className=" text-[12px] font-semibold ml-4 ">Script dev</div>
         </section>
      </div>
 
@@ -221,7 +221,7 @@ const FoodMenu = () => {
 <div className="px-4 rounded-[10px]">
 
 
-<img src={bb} alt="" className="rounded-[10px]"/>
+{/* <img src={bb} alt="" className="rounded-[10px]"/> */}
 
 </div>
     <div className="flex flex-wrap justify-center mt-[1rem]">

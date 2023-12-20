@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import { IoIosStar, IoIosStarHalf } from "react-icons/io";
 import {GiHotMeal} from "react-icons/gi";
+import { FaStar } from "react-icons/fa6";
 
 const Hero = () => {
 
@@ -130,25 +131,90 @@ Track and Enjoy: Sit back, relax, and track your order in real-time. Before you 
     </section>
 
     </div>
-    {/* <div className='fixed  bottom-0 z-50 left-1/2 transform -translate-x-1/2 '>
+  {/* what our favourite customers  say */}
+<section className='mt-[6rem]  flex justify-center '>
+       <section>
+
+    
+       <div>
+        <img src="https://bslthemes.com/html/quickeat/assets/img/photo-3.png" alt="" />
+       </div>
+
+       <div className="desc">
+        <h2 className='text-[2rem] text-gray-800  w-[95%] font-semibold'>Food from your favorite restaurants to your table</h2>
+        <p className='py-[1.5rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Accusamus voluptate blanditiis, cupiditate officia aut
+              perspiciatis eius asperiores a, doloremque fugiat atque,
+             soluta aliquam harum sapiente expedita deserunt cum suscipit! Maxime.</p>
+
+             <div>
+              <button className='w-[70%] rounded-[10px] bg-yellow-500 font-semibold py-4 text-slate-100 uppercase'>order now</button>
+             </div>
+       </div>
+
+       </section>
+      </section>
 
 
-    <div class="container">
- 
- <span class="sun sunshine"></span>
- <span class="sun px-[1rem] pt-[.6rem]">
-    <h1><GiHotMeal className = ' text-[3rem] text-slate-900' /></h1>
- </span>
 
-</div>
-</div> */}
-
-<section>
+      {/* service rating  */}
+      <section className='flex justify-center mt-[3rem]'>
+        <div>
+            <h1 className='text-[2rem] font-semibold my-[2rem] text-slate-800'>Service shows good Taste </h1>
+     
+        <div className="ratingNo">
        
 
-        <article>
-          
-        </article>
+        <span className='flex justify-center mt-4 bg-white shadow-md rounded-[10px]'>
+    <h1 className='text-[4rem] font-bold text-yellow-500 '>24</h1>
+     <p className='pt-4 text-[20px]  pl-[20px]  w-[50%]'>online availabilty</p>
+</span>
+
+<span className='flex justify-center my-[4rem] shadow-md rounded-[10px]'>
+    <h1 className='text-[4rem] font-bold text-yellow-500 '>976</h1>
+     <p className='pt-4 text-[20px]  pl-[20px]  w-[50%]'>satisfied customers</p>
+</span>
+
+<span className='flex justify-center mt-4 shadow-md rounded-[10px]'>
+    <h1 className='text-[4rem] font-bold text-yellow-500 '>1k+</h1>
+     <p className='pt-4 text-[20px]  pl-[20px]  w-[40%]'>food delivered</p>
+</span>
+
+</div>
+        </div>
+      </section>
+
+      {/* testimonial section */}
+
+      <section className='flex justify-center mt-[4rem]'>
+        <div>
+            <h1>what customers say about us</h1>
+
+<div>
+    <p>"I love how easy it is to find new restaurants on FOODIE.oi.
+         The variety is impressive, and the delivery is always prompt!" </p>
+         <div className='flex'>
+            <div className='w-[80px] h-[80px] bg-slate-400 rounded-full'>
+
+            </div>
+            <span className='ml-2'>
+
+            <h1 className='font-medium pt-[2rem] text-lg'>John Doe</h1>
+            <span className='flex'>
+
+            <FaStar className='text-yellow-500' />
+            <FaStar className='text-yellow-500' />
+            <FaStar className='text-yellow-500' />
+            <FaStar className='text-yellow-500' />
+            </span>
+            </span>
+         </div>
+</div>
+
+            <div>
+                <img src="https://bslthemes.com/html/quickeat/assets/img/photo-4.png" alt="" />
+            </div>
+        </div>
       </section>
     </main>
     
