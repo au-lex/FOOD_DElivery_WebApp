@@ -66,10 +66,14 @@ top-10' /></span>
         <TbSmartHome className='text-[1.5rem] text-yellow-600  ' /></span>Home</li>
         <Link to="/Menu"><li className='text-[1rem] flex  mb-[2.5rem] font-semibold ' > <span className='pr-2'>
         
-        <SiIfood className='text-[1.5rem] text-yellow-600 ' /></span> Food Menu</li></Link>
+        <SiIfood className='text-[1.5rem] text-yellow-600 ' /></span> Food Menu</li>
+        </Link>
+
+        <Link to ='/Abt'>
     <li className='text-[1rem] flex  mb-[2.5rem] font-semibold' > <span className='pr-2'>
         <MdOutlineInfo className='text-[1.5rem]  text-yellow-600' />
-        </span>About us </li>
+        </span>About us </li></Link>
+
     <li className='text-[1rem] flex  mb-[2.5rem] font-semibold' > <span className='pr-2'>
         <IoMdContacts className='text-[1.5rem] text-yellow-600 ' /></span>Contact us</li>
     <li className='text-[1rem] flex  mb-[1.8rem] font-semibold' > <span className='pr-2'>
