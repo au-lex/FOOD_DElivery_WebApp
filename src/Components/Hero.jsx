@@ -165,17 +165,17 @@ Track and Enjoy: Sit back, relax, and track your order in real-time. Before you 
         <div className="ratingNo">
        
 
-        <span className='flex justify-center mt-4 py-10 bg-white border shadow-sm rounded-[10px]'>
+        <span className='flex justify-center mt-2 py-10 bg-white border shadow-sm rounded-[10px]'>
     <h1 className='text-[3rem] font-bold text-yellow-500 '>24</h1>
      <p className='pt-1 text-[20px]  pl-[20px]  w-[50%]'>online availabilty</p>
 </span>
 
-<span className='flex justify-center my-[4rem] py-10  shadow-sm border rounded-[10px]'>
+<span className='flex justify-center my-[3rem] py-10  shadow-sm border rounded-[10px]'>
     <h1 className='text-[3rem] font-bold text-yellow-500 '>976</h1>
      <p className='pt-1 text-[20px]  pl-[20px]  w-[50%]'>satisfied customers</p>
 </span>
 
-<span className='flex justify-center mt-4 shadow-sm border py-10 rounded-[10px]'>
+<span className='flex justify-center mt-2 shadow-sm border py-10 rounded-[10px]'>
     <h1 className='text-[3rem] font-bold text-yellow-500 '>1k+</h1>
      <p className='pt-1 text-[20px]  pl-[20px]  w-[40%]'>food delivered</p>
 </span>
