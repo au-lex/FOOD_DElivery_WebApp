@@ -3,7 +3,7 @@
 const data = [
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg",
-    title: "Nike Air Monarch IV",
+    title: "Jollof rice",
     
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -14,7 +14,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/West_African_Fried_Plantains_-_The_Midwest_Kitchen_Blog_buoacw.jpg",
-    title: "Nike Air Vapormax Plus",
+    title: "Plantain jollof",
   
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -26,7 +26,7 @@ const data = [
 
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/Red_Red_Recipe_Red_Red_Ghana_-_Dream_Africa_1_cfljkd.jpg",
-    title: "Nike Waffle One Sneaker",
+    title: "Beans & plaintain",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -37,7 +37,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/10_MOST_POPULAR_FOOD_IN_LAGOS_NIGERIA___STREET_LIFE_mragn3.jpg",
-    title: "Nike Running Shoe",
+    title: "Abacha & ugba ",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -48,7 +48,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574884/FOOD_APP/African_Food_on_Instagram__I_am_going_out_to_get_dmioj5.jpg",
-    title: "Flat Slip On Pumps",
+    title: "Stew & plaintain",
   
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -59,7 +59,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574862/FOOD_APP/My_Mum_s_Jollof_Rice_-_Zena_s_Kitchen_pgexvn.jpg",
-    title: "Knit Ballet Flat",
+    title: "Rice & plaintain",
   
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -83,7 +83,7 @@ const data = [
 
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574852/FOOD_APP/ccaf1135-5d8b-40d6-a13b-e1d665f35278_tfhxa7.jpg",
-    title: "Nike Zoom Freak",
+    title: "Abacha & Azu",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -93,21 +93,12 @@ const data = [
     category: "sneakers",
   },
 
-  {
-    img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574852/FOOD_APP/Making_Abacha_And_Ugba_Recipe_African_Salad_-_Dream_Africa_v8ydda.jpg",
-    title: "Nike Men's Sneaker",
-   
-    reviews: "(123 reviews)",
-    prevPrice: "$140,00",
-    newPrice: "200",
-    company: "Adidas",
-    color: "blue",
-    category: "sneakers",
-  },
+  
+
 
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574852/FOOD_APP/f0020017-fefe-4010-b403-4c81ac658fa4_uzml1j.jpg",
-    title: "PUMA BLACK-OCE",
+    title: "Jollof & chicken",
  
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -118,7 +109,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574851/FOOD_APP/Adalu_Nigerian_Beans_And_Corn_Recipe_-_Dream_Africa_1_v2vzdc.jpg",
-    title: "Pacer Future Sneaker",
+    title: "Beans & Fish",
     
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -129,7 +120,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574851/FOOD_APP/How_to_Make_Efo_Riro_1_esxlj4.jpg",
-    title: "Unisex-Adult Super",
+    title: "Nkwobie",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -140,7 +131,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574851/FOOD_APP/067a495a-e0c2-4577-ae12-6804ce53bbfc_awosae.jpg",
-    title: "Roma Basic Sneaker",
+    title: "Peppered Abacha",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -151,7 +142,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574827/FOOD_APP/14_Of_The_Most_Amazing_Nigerian_Food_Transformations_bsvbbc.jpg",
-    title: "Pacer Future Doubleknit",
+    title: "Moi-Moi & Fish",
   
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -163,7 +154,7 @@ const data = [
 
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574827/FOOD_APP/Easy_Homemade_Spaghetti_Sauce_Recipe___Modernmealmakeover_com_jxonjl.jpg",
-    title: "Fusion Evo Golf Shoe",
+    title: "Beans Salad",
     
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -174,7 +165,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574850/FOOD_APP/Efo_riro_Nigerian_Spinach_stew_recipe_gxcy37.jpg",
-    title: "Rainbow Chex Skate",
+    title: "Vegetable Soup",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -185,7 +176,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574826/FOOD_APP/910fbbd5-465e-45c0-8880-ccc4948471d0_qqw7a8.jpg",
-    title: "Low-Top Trainers",
+    title: "Egusi & Foo foo",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -196,7 +187,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574809/FOOD_APP/95c1121d-abb1-4b1f-b050-673a8ab7b354_vkkyhg.jpg",
-    title: "Vans Unisex Low-Top",
+    title: "Agwuruagwuo",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -207,7 +198,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574809/FOOD_APP/e8cab7e9-039a-4f51-82e5-b066949b87bf_xsuogn.jpg",
-    title: "Classic Bandana Sneakers",
+    title: "Nkpomo",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -218,7 +209,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574784/FOOD_APP/5b2885f6-c7d8-47ad-8c07-4d65380c6fb6_cvazvd.jpg",
-    title: "Chunky High Heel",
+    title: "Beans & plaintain",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -229,7 +220,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574784/FOOD_APP/Rice_recipes_in_Nigeria_Archives_wzjkqj.jpg",
-    title: "Slip On Stiletto High Heel",
+    title: "Chicken& Rice",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -240,7 +231,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574783/FOOD_APP/23_Nigerian_Foods_The_Whole_World_Should_Know_And_Love_og01i2.jpg",
-    title: "DREAM PAIRS Court Shoes",
+    title: "Pepper Soup",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -251,7 +242,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574783/FOOD_APP/Jollof_Rice_dzxjsi.jpg",
-    title: "Nike Air Vapormax Plus",
+    title: "Jollof rice &  Fish",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -263,7 +254,7 @@ const data = [
 
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574783/FOOD_APP/Homemade_Spaghetti_Sauce_Recipe_With_Fresh_Tomatoes_wi4nfi.jpg",
-    title: "Low Mid Block Heels",
+    title: "Spaghetti",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -274,7 +265,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574760/FOOD_APP/Nigerian_Edikaikong_Soup_Step_By_Step_Recipe_-_Dream_Africa_xagfwk.jpg",
-    title: "Chunky High Heel",
+    title: "Vegetable Soup",
   
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -285,7 +276,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574783/FOOD_APP/Pepper_snail_tgooqi.jpg",
-    title: "Amore Fashion Stilettos",
+    title: "Peppered Fish",
     
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -296,7 +287,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574782/FOOD_APP/f1302cb3-e2fb-4b49-8eb1-bfa8c1c00fa0_u4ngud.jpg",
-    title: "Bridal Sandals Glitter",
+    title: "Egusi Delicay",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -307,7 +298,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574782/FOOD_APP/Paksiw_na_Pata_wxkw3a.jpg",
-    title: "Wedding Prom Bridal",
+    title: "Wedding Pork",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -328,7 +319,7 @@ const data = [
  
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574703/FOOD_APP/Cast_Iron_Pizza_r8rpcz.jpg",
-    title: "Nike Air Monarch IV",
+    title: "Pizza",
     
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -339,11 +330,11 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574703/FOOD_APP/African_salad_abacha_h4wwhu.jpg",
-    title: "Nike Air Vapormax Plus",
+    title: "Abacha Vegetable",
   
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
-    newPrice: "200",
+    newPrice: "4,500",
     company: "Nike",
     color: "red",
     category: "sneakers",
@@ -351,7 +342,7 @@ const data = [
 
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574703/FOOD_APP/c9549bba-e25c-42ae-b6bd-a8e30c27f3c6_pbtvw0.jpg",
-    title: "Nike Waffle One Sneaker",
+    title: "Pepper Soup",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -362,7 +353,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574703/FOOD_APP/Best_Breakfast_from_the_Haitian_Culture_wqdrfa.jpg",
-    title: "Nike Running Shoe",
+    title: "Spaghetti & Egg",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -384,7 +375,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574704/FOOD_APP/222431b7-2acc-4742-9560-d607115e7ab7_qnuqun.jpg",
-    title: "Knit Ballet Flat",
+    title: "Moi-Moi& Egg",
   
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -396,7 +387,7 @@ const data = [
 
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574704/FOOD_APP/Dominos_Retracts__Pizza_For_Life__Guarantee_After_HUNDREDS_Of_People_Got_Dominos_Tattoos_wv2prc.jpg",
-    title: "Loafer Flats",
+    title: "Loafer Pizza",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -408,7 +399,7 @@ const data = [
 
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574704/FOOD_APP/Nigerian_Okra_Soup_Step_By_Step_Recipe_-_Dream_Africa_1_ss1tig.jpg",
-    title: "Nike Zoom Freak",
+    title: "Okro Soup",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -420,7 +411,7 @@ const data = [
 
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574705/FOOD_APP/Top_18_Best_Nigerian_Foods__Most_Popular_Dishes_mltafn.jpg",
-    title: "Nike Men's Sneaker",
+    title: "Moi-Moi & Fish",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -432,7 +423,7 @@ const data = [
 
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574704/FOOD_APP/Goat_Intestine_p0tmoz.jpg",
-    title: "PUMA BLACK-OCE",
+    title: "Pepper Soup",
  
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -443,7 +434,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574705/FOOD_APP/African_Salad_Abacha_and_Ugba_Recipe_-_Chef_s_Pencil_luqqkj.jpg",
-    title: "Pacer Future Sneaker",
+    title: "Abacha & vegetables",
     
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -454,7 +445,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574705/FOOD_APP/5040d46c-cf36-4fdc-9659-fb8b8ecc247d_huqggo.jpg",
-    title: "Unisex-Adult Super",
+    title: "Abacha delicacy",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
@@ -465,7 +456,7 @@ const data = [
   },
   {
     img: "https://res.cloudinary.com/durbee4ln/image/upload/v1701574705/FOOD_APP/List_of_My_Top_10_Favorite_Nigerian_Foods_1_y6msc2.jpg",
-    title: "Roma Basic Sneaker",
+    title: "Abacha & kpomo",
    
     reviews: "(123 reviews)",
     prevPrice: "$140,00",

@@ -233,7 +233,7 @@ const FoodMenu = () => {
         </div>// Replace this with your Loader component
         ) : (
           currentItems.map((prod, indx) => (
-               <section className=' h-[25rem] bg-slate-100  border  shadow-2xl 
+               <section className=' h-[25rem] bg-slate-100    shadow-2xl 
           mx-2 rounded-[20px] my:h-[16rem]   mb-[1rem]'>
 
 
