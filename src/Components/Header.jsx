@@ -74,8 +74,10 @@ top-10' /></span>
         <MdOutlineInfo className='text-[1.5rem]  text-yellow-600' />
         </span>About us </li></Link>
 
+        
+<Link to={'/Contact'}>
     <li className='text-[1rem] flex  mb-[2.5rem] font-semibold' > <span className='pr-2'>
-        <IoMdContacts className='text-[1.5rem] text-yellow-600 ' /></span>Contact us</li>
+        <IoMdContacts className='text-[1.5rem] text-yellow-600 ' /></span>Contact us</li></Link>
     <li className='text-[1rem] flex  mb-[1.8rem] font-semibold' > <span className='pr-2'>
         <IoSettingsOutline className='text-[1.4rem] text-yellow-600 ' /></span>Settings</li>
 

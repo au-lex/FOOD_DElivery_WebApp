@@ -9,6 +9,7 @@ import './index.css'
 
 import FoodMenu from './Components/Pages/FoodMenu.jsx';
 import About from './Components/Pages/About.jsx';
+import Contact from './Components/Pages/Contact.jsx';
 
 const router = createBrowserRouter([
 
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
   {
     path: "/Abt",
     element: <About/>,
+  },
+
+  {
+    path: "/Contact",
+    element: <Contact/>,
   },
 ])
 
