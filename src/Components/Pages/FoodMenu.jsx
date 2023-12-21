@@ -233,7 +233,7 @@ const FoodMenu = () => {
         </div>// Replace this with your Loader component
         ) : (
           currentItems.map((prod, indx) => (
-               <section className=' h-[25rem] bg-slate-100   shadow-2xl 
+               <section className=' h-[25rem] bg-slate-100  border  shadow-2xl 
           mx-2 rounded-[20px] my:h-[16rem]   mb-[1rem]'>
 
 
@@ -251,8 +251,8 @@ const FoodMenu = () => {
           <div className='mt-2 flex   justify-between'>
 
        
-            <button className='bg-yellow-600 w-[100%]  border border-red-500
-             my:text-[12px] text-slate-100
+            <button className='bg-yellow-00 text-gray-600 w-[100%]   border-yellow-600 border-[2px]
+             my:text-[12px] 
              rounded-[20px]  h-[2rem]'>   Add to cart</button>
 
 {/* <span className="bg-yellow-500 h-[2.5rem] border-red-500 border-[2px]
