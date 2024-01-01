@@ -2,7 +2,8 @@
 import React, { useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import { IoMdNotificationsOutline } from "react-icons/io";
-
+import { FaStar, FaHeart, FaRegHeart } from 'react-icons/fa';
+import { FaCirclePlus } from "react-icons/fa6";
 import { IoCart } from "react-icons/io5";
 import { FaBagShopping } from "react-icons/fa6";
 import data from '../Data/data';
@@ -225,51 +226,46 @@ const FoodMenu = () => {
 {/* <img src={bb} alt="" className="rounded-[10px]"/> */}
 
 </div>
-    <div className="flex flex-wrap justify-center mt-[1rem]">
-        {isLoading ? (
-          <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-slate-900 bg-opacity-90 z-50">
-          {/* <div className="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12 mb-4"></div> */}
-          <div className="loader ease-linear rounded-full border-t-4 border-b-4 border-gray-200 h-12 w-12 animate-spin"></div>
-        </div>// Replace this with your Loader component
-        ) : (
-          currentItems.map((prod, indx) => (
-               <section className=' h-[25rem] bg-slate-100    shadow-2xl 
-          mx-2 rounded-[20px] my:h-[16rem]   mb-[1rem]'>
-
-
-        <div key={indx} className='h mx-[1rem] border border-red-500  h-[140px] w-[140px] my:w-[132px] 
-         my:h-[120px] my-[1rem]'>
-          <img src={prod.img} alt="" className='hh ' />
-          <figcaption className='pt-[1rem]  '>
-            <div className='flex  justify-between'>
-
-          <h2 className='my:text-[12px]'>{prod.title}</h2>
-         
-            </div>
-            <p className='text-[20px] my:text-[18px] font-semibold
-           text-yellow-700 '>#{prod.newPrice}</p>
-          <div className='mt-2 flex   justify-between'>
-
-       
-            <button className='bg-yellow-00 text-gray-600 w-[100%]   border-yellow-600 border-[2px]
-             my:text-[12px] 
-             rounded-[20px]  h-[2rem]'>   Add to cart</button>
-
-{/* <span className="bg-yellow-500 h-[2.5rem] border-red-500 border-[2px]
- 
- w-[2.5rem] p-[8px] rounded-full">
-
-< IoCart className="text-[20px] text-white" />
-</span> */}
-
-          </div>
-          </figcaption>
+<div className="flex flex-wrap justify-center mt-[1rem]">
+  {isLoading ? (
+    // Loader component
+    <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-slate-900 bg-opacity-90 z-50">
+      <div className="loader ease-linear rounded-full border-t-4 border-b-4 border-gray-200 h-12 w-12 animate-spin"></div>
+    </div>
+  ) : (
+    currentItems.map((prod, indx) => (
+      <section
+        key={indx}
+        className='h-[10rem] w-[150px] mx-2' // Set a fixed height and width for each section
+      >
+        <div className='flex mx-[1rem] border border-red-500'>
+          <img
+            src={prod.img}
+            alt=""
+            className='object-cover w-full h-[90px] rounded-t-[20px]' // Set a fixed height for the image
+          />
         </div>
-       
-        </section>
-          ))
-        )}
-      </div>
+        <div className="px-2 pt-2 flex justify-between">
+          <div className="mt-2">
+            <div>
+              <div className="flex space-x-1 my-2">
+                {[...Array(5)].map((star, i) => (
+                  <FaStar key={i} className="text-yellow-500 text-[10px]" />
+                ))}
+              </div>
+            </div>
+            <div className="flex space-x-4 my-1">
+              <p className="text-sm font-bold">${prod.newPrice}</p>
+              <p><FaCirclePlus className='text-orange-500 cursor-pointer text-[1.5rem]' /></p>
+            </div>
+          </div>
+          <p className="mt-0 text-sm">{prod.title}</p>
+        </div>
+      </section>
+    ))
+  )}
+</div>
+
 
   
 <div className='px-[2rem] '>
