@@ -18,26 +18,51 @@ const HeaderFooter = () => {
 
 <ul   className='flex justify-between px-[1rem]    pt-[.8rem]'>
 
-<li> <span className=' block p-2 rounded-full bg-yellow00 border-b-[6px] border-b-slate-100 '>
+<li> <span className=' block  rounded-full bg-yellow00 borderb-[6px] border-b-slate-0 '>
   <Link to={'/'}>
 <TbSmartHome  className='text-[1.7rem] text-slate-100 '/>
 </Link>
     </span></li>
-<li> <span className='  block p-2 rounded-full bg-yellow-00 '>
-< FaRegHeart  className='text-[1.6rem] text-slate-100 relative'/>
-<span className='bg-red-500 w-[1.5rem] pl-[7px] h-[1.5rem]
- rounded-full absolute top-[1rem]  left-[8.8rem] text-white'>5</span>
-    </span></li>
-<li> <span className=' block p-2 rounded-full bg-yellow-00 '>
-< IoCartOutline  className='text-[1.7rem] text-slate-100 relative '/>
 
-<span className='bg-red-500 w-[1.5rem] pl-[6px] h-[1.5rem]
- rounded-full absolute top-[1rem]  right-[6.8rem] text-white'>2</span>
-    </span></li>
-<li> <span className='  block p-2 rounded-full bg-yellow-00 '>
+
+    <li> 
+
+
+<span className='relative'  >
+              
+< FaRegHeart   className='text-[1.8rem]
+               text-slate-100 cursor-pointer'     />
+            
+            <span className='bg-red-500 top-0 pl-[8px] pt-[.5px] h-6 w-6 absolute rounded-full
+             left-[1.4rem] text-white text-[14px]'>
+            2
+            </span>
+            </span>
+
+</li>
+
+<li> 
+
+
+<span className='relative '  >
+              
+< IoCartOutline   className='text-[1.8rem]
+               text-slate-100 cursor-pointer'     />
+            
+            <span className='bg-red-500 top-0 pl-[8px] pt-[.5px] h-6 w-6 absolute rounded-full
+             left-[1.4rem] text-white text-[14px]'>
+            2
+            </span>
+            </span>
+
+</li>
+
+
+
+<li> <span className='  block  rounded-full bg-yellow-00 '>
 < FaRegUser  className='text-[1.7rem] text-slate-100'/>
     </span></li>
-</ul>
+    </ul>
 
 </div>
 </section>
