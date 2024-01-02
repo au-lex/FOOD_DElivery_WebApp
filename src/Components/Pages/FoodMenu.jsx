@@ -108,8 +108,8 @@ const FoodMenu = () => {
         </div>
         <section>
 
-     <div className=" text-[10px] ml-4 pt-[.5rem] text-yellow-500"> hi dear.. Welcome ,</div>
-     <div className=" text-[12px] font-semibold ml-4 ">Script dev</div>
+     <div className=" text-[10px] ml-4 pt-[.5rem] text-yellow-500"> Welcome ,</div>
+     <div className=" text-[12px] font-meduim ml-4 ">Script dev</div>
         </section>
      </div>
 
@@ -226,7 +226,7 @@ const FoodMenu = () => {
 {/* <img src={bb} alt="" className="rounded-[10px]"/> */}
 
 </div>
-<div className="flex flex-wrap justify-center mt-[1rem]">
+<div className="flex flex-wrap justify-center mt-[1rem] ">
   {isLoading ? (
     // Loader component
     <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-slate-900 bg-opacity-90 z-50">
@@ -236,30 +236,36 @@ const FoodMenu = () => {
     currentItems.map((prod, indx) => (
       <section
         key={indx}
-        className='h-[10rem] w-[150px] mx-2' // Set a fixed height and width for each section
+        className='h-[220px] w-[160px] mx-2 shadow-xl   my-4  border rounded-[10px] ' // Set a fixed height and width for each section
       >
-        <div className='flex mx-[1rem] border border-red-500'>
+        <div className='flex mx-[0rem] border rounded-[20px]'>
           <img
             src={prod.img}
             alt=""
-            className='object-cover w-full h-[90px] rounded-t-[20px]' // Set a fixed height for the image
+            className='object-cover w-full h-[120px] ' // Set a fixed height for the image
           />
         </div>
-        <div className="px-2 pt-2 flex justify-between">
+        <div className="px-3 pt-2 fle justif-between">
           <div className="mt-2">
-            <div>
+            <div className=''>
               <div className="flex space-x-1 my-2">
                 {[...Array(5)].map((star, i) => (
+                  
                   <FaStar key={i} className="text-yellow-500 text-[10px]" />
-                ))}
+                  ))}
+                 
               </div>
             </div>
-            <div className="flex space-x-4 my-1">
+            <div className="flspace-x-4 my-1">
+              <div className='flex justify-between'>
+
               <p className="text-sm font-bold">${prod.newPrice}</p>
               <p><FaCirclePlus className='text-orange-500 cursor-pointer text-[1.5rem]' /></p>
+              </div>
+        <p className="mt-0 text-sm">{prod.title}</p>
             </div>
           </div>
-          <p className="mt-0 text-sm">{prod.title}</p>
+         
         </div>
       </section>
     ))
