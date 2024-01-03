@@ -7,7 +7,7 @@ const data = [
     
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
-    newPrice: "200",
+    newPrice: "2500",
     company: "Nike",
     color: "white",
     category: "sneakers",
@@ -18,7 +18,7 @@ const data = [
   
     reviews: "(123 reviews)",
     prevPrice: "$140,00",
-    newPrice: "200",
+    newPrice: "2000",
     company: "Nike",
     color: "red",
     category: "sneakers",
@@ -29,8 +29,8 @@ const data = [
     title: "Beans & plaintain",
    
     reviews: "(123 reviews)",
-    prevPrice: "$140,00",
-    newPrice: "200",
+    prevPrice: "$1600,00",
+    newPrice: "2800",
     company: "Nike",
     color: "green",
     category: "sneakers",
@@ -40,8 +40,8 @@ const data = [
     title: "Abacha & ugba ",
    
     reviews: "(123 reviews)",
-    prevPrice: "$140,00",
-    newPrice: "200",
+    prevPrice: "$1400,00",
+    newPrice: "1500",
     company: "Adidas",
     color: "black",
     category: "sneakers",
@@ -51,8 +51,8 @@ const data = [
     title: "Stew & plaintain",
   
     reviews: "(123 reviews)",
-    prevPrice: "$140,00",
-    newPrice: "200",
+    prevPrice: "$1900,00",
+    newPrice: "2000",
     company: "Vans",
     color: "green",
     category: "flats",
@@ -62,8 +62,8 @@ const data = [
     title: "Rice & plaintain",
   
     reviews: "(123 reviews)",
-    prevPrice: "$140,00",
-    newPrice: "50",
+    prevPrice: "$2400,00",
+    newPrice: "2500",
     company: "Adidas",
     color: "black",
     category: "flats",
@@ -448,7 +448,7 @@ const data = [
     title: "Abacha delicacy",
    
     reviews: "(123 reviews)",
-    prevPrice: "$140,00",
+    prevPrice: "$3400,00",
     newPrice: "150",
     company: "Puma",
     color: "black",
