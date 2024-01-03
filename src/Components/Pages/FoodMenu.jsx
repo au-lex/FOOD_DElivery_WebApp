@@ -176,8 +176,8 @@ const FoodMenu = () => {
   
   <span>
     <img className="w-[80px] h-[80px] object-contain ml-4 rounded-full border-[2px] border-yellow-600"
-    src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg" alt="" />
-   <span className="pt-[1rem] pl-2">Beans dishe</span>
+    src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574851/FOOD_APP/Adalu_Nigerian_Beans_And_Corn_Recipe_-_Dream_Africa_1_v2vzdc.jpg" alt="" />
+   <span className="pt-[1rem] pl-2">Beans</span>
   </span>
    </div>
 </SwiperSlide>
@@ -188,7 +188,7 @@ const FoodMenu = () => {
   
   <span>
     <img className="w-[80px] h-[80px] object-contain ml-4 rounded-full border-[2px] border-yellow-600"
-    src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg" alt="" />
+    src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574851/FOOD_APP/download_3_prafmg.jpg" alt="" />
    <span className="pt-[1rem] pl-2">Abacha</span>
   </span>
    </div>
@@ -200,7 +200,7 @@ const FoodMenu = () => {
   
   <span>
     <img className="w-[80px] h-[80px] ml-4 object-contain rounded-full border-[2px] border-yellow-600"
-    src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/1a4aac68-213d-43a6-835c-69b094237a34_na5zy6.jpg" alt="" />
+    src="https://res.cloudinary.com/durbee4ln/image/upload/v1701574885/FOOD_APP/10_MOST_POPULAR_FOOD_IN_LAGOS_NIGERIA___STREET_LIFE_mragn3.jpg" alt="" />
    <span className="pt-[1rem] pl-2">Pepper soup</span>
   </span>
    </div>
