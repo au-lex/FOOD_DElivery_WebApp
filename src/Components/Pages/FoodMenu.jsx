@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ReactPaginate from 'react-paginate';
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { FaStar, FaHeart, FaRegHeart } from 'react-icons/fa';
@@ -22,8 +22,31 @@ import 'swiper/css';
 const itemsPerPage = 10;
 
 const FoodMenu = () => {
+const [Search, Setsearch] = useState('');
+const [FiterData, SetFiterData] = useState(data);
+
+const handleSearch = () =>  { 
+  const filterItems = data.filter(item =>
+    item.title.toLowerCase().includes(Search.toLowerCase())
+  );
+  SetFiterData(filterItems); // Update the filtered data state with filterItems
+}
 
 
+useEffect(() => {
+  handleSearch();
+}, [Search]);
+
+
+
+const [isModalOpen, setIsModalOpen] = useState(false);
+const openModal = () => {
+  setIsModalOpen(true);
+};
+
+const closeModal = () => {
+  setIsModalOpen(false);
+};
 
   const [currentPage, setCurrentPage] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
@@ -129,7 +152,11 @@ const FoodMenu = () => {
 
   <FcSearch className="text-[1.8rem]" />
     </span>
-    <input   placeholder="Search all meals......" type="text" class="mt-1 
+    <input 
+     onClick={openModal}
+    value={Search}
+    onChange={(e) => Setsearch(e.target.value)}
+    placeholder="Search all meals......" type="text" class="mt-1 
     block w-full px-3 py-2 pl-[4rem] 
     text-[21px]
      bg-white border border-slate-300 rounded-[40px]
@@ -143,7 +170,45 @@ const FoodMenu = () => {
  
 </form>
 
-    {/* filter region */}
+{isModalOpen && (
+  <div className="absolute inset-0
+   bg-black bg-opacity-50 z-50">
+    <div className="bg-white w-full max-w-md p-6 rounded-lg">
+      <form className="mb-4">
+        <label className="block relative">
+          <span className="absolute left-3 top-2">
+            <FcSearch className="text-2xl" />
+          </span>
+          <input 
+            value={Search}
+            onChange={(e) => Setsearch(e.target.value)}
+            placeholder="Search all meals..."
+            type="text"
+            className="mt-1 block w-full px-3 py-2 pl-10 text-lg bg-gray-100 border border-gray-300 rounded-md placeholder-gray-500 focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500"
+          />
+        </label>
+      </form>
+      <div className="p-4 rounded shadow-lg">
+        <h2 className="text-2xl mb-4">Search Results</h2>
+        {FiterData.map(item => (
+          <div key={item.title} className="mb-4">
+            <img
+              src={item.img}
+              alt={item.title}
+              className="w-full h-40 object-cover mb-2 rounded"
+            />
+            <p className="text-lg font-semibold">{item.title}</p>
+            {/* Include other details as needed */}
+          </div>
+        ))}
+        <button onClick={closeModal} className="bg-gray-400 text-white px-4 py-2 rounded">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+)}
+
 
 
 
