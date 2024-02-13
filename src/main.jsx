@@ -1,8 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {
-  createBrowserRouter,
-  RouterProvider,
+import { BrowserRouter, Routes,Route
 } from "react-router-dom";
 import App from './App.jsx'
 import './index.css'
@@ -10,34 +8,30 @@ import './index.css'
 import FoodMenu from './Components/Pages/FoodMenu.jsx';
 import About from './Components/Pages/About.jsx';
 import Contact from './Components/Pages/Contact.jsx';
+import Error from './Components/error.jsx';
+import Fdetails from './Components/Pages/Fdetails.jsx';
 
-const router = createBrowserRouter([
+const MyRouter = () => {
+  
+  return (
+    <BrowserRouter>
+    
+    <Routes>
+    <Route path ='/'  element= {<App />} />, 
+    <Route path ='/Menu'  element= {<FoodMenu />} />, 
+    <Route path ='/Abt'  element= {<About />} />, 
+    <Route path ='/Contact'  element= { <Contact/>} />, 
+    <Route path ='/Menu/:foodId'  element= {<Fdetails />} />, 
+    <Route path ='/'  element= {<App />} />, 
+    </Routes>
+    </BrowserRouter>
+  )
+}
 
   
-  {
-    path: "/",
-    element: <App />,
-  },
 
-  {
-    path: "/Menu",
-    element: <FoodMenu />,
-  },
-
-  {
-    path: "/Abt",
-    element: <About/>,
-  },
-
-  {
-    path: "/Contact",
-    element: <Contact/>,
-  },
-])
-
+ 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-     <RouterProvider router={router} />
-  </React.StrictMode>,
+    <MyRouter/> 
 )
