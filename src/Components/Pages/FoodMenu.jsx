@@ -11,6 +11,7 @@ import bb from '../../assets/images/bgg.jpg'
 import HeaderFooter from "../HeaderFooter";
 import { FcSearch } from "react-icons/fc";
 import Footer from '../Footer';
+import { useNavigate } from 'react-router-dom';
 
 
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
@@ -29,7 +30,7 @@ const handleSearch = () =>  {
   const filterItems = data.filter(item =>
     item.title.toLowerCase().includes(Search.toLowerCase())
   );
-  SetFiterData(filterItems); // Update the filtered data state with filterItems
+  SetFiterData(filterItems); 
 }
 
 
@@ -37,7 +38,7 @@ useEffect(() => {
   handleSearch();
 }, [Search]);
 
-
+const navigate = useNavigate();
 
 const [isModalOpen, setIsModalOpen] = useState(false);
 const openModal = () => {
@@ -64,57 +65,11 @@ const closeModal = () => {
 
   const offset = currentPage * itemsPerPage;
   const currentItems = data.slice(offset, offset + itemsPerPage);
-//   const settings = {
-//     dots: true,
-//     infinite: true,
-//     speed: 500,
-//     slidesToShow: 3,
-//     slidesToScroll: 3,
-//     initialSlide: 0,
-//  autoplay: true,
-//   autoplaySpeed: 2000,
-  
-   
-   
-//     responsive: [
-//       {
-//         breakpoint: 1024,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 2,
-//           infinite: true,
-//           dots: true,
-//         },
-//       },
-//       {
-//         breakpoint: 600,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 1,
-//           initialSlide: 1,
-//         },
-//       },
-//       {
-//         breakpoint: 480,
-//         settings: {
-//           slidesToShow: 1,
-//           slidesToScroll: 1,
-//         },
-//       },
-//     ],
-//   };
-  return (
+
+return (
 
 
     <main main className="bg-white pt-[1rem] ">
-
-
-
-
-
-
-
-
 
 <div className="cartHa px-[1rem]">
 <div className=" flex  justify-between mb-4 bg-white 
@@ -141,7 +96,7 @@ const closeModal = () => {
          cursor-pointer '  /></div> 
 
 </div>
-    {/* <h6 className=" text-[20px]">hello jaminel,</h6> */}
+
     <h1 className="text-[26px] mt-[6rem] font-meduim">what would you like to <span className="text-yellow-500 font-bold">eat ?</span></h1>
     </div>
 
@@ -198,7 +153,7 @@ const closeModal = () => {
               className="w-full h-40 object-cover mb-2 rounded"
             />
             <p className="text-lg font-semibold">{item.title}</p>
-            {/* Include other details as needed */}
+
           </div>
         ))}
         <button onClick={closeModal} className="bg-gray-400 text-white px-4 py-2 rounded">
@@ -213,13 +168,11 @@ const closeModal = () => {
 
 
     <Swiper
-      // install Swiper modules
+     
       modules={[Navigation, Pagination, A11y]}
       spaceBetween={1}
       slidesPerView={3.5}
-      // navigation
-      // pagination={{ clickable: true }}
-      // scrollbar={{ draggable: true }}
+      
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
     >
@@ -303,7 +256,7 @@ const closeModal = () => {
         key={indx}
         className='h-[220px] w-[160px] mx-2 shadow-xl   my-4  border rounded-[10px] ' // Set a fixed height and width for each section
       >
-        <div className='flex mx-[0rem] border rounded-[20px]'>
+        <div  onClick={() => navigate(`/Menu/${prod.title.split(' ').join('-')}`)} className='flex mx-[0rem] border rounded-[20px]'>
           <img
             src={prod.img}
             alt=""
