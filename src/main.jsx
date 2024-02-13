@@ -8,7 +8,7 @@ import './index.css'
 import FoodMenu from './Components/Pages/FoodMenu.jsx';
 import About from './Components/Pages/About.jsx';
 import Contact from './Components/Pages/Contact.jsx';
-import Error from './Components/error.jsx';
+
 import Fdetails from './Components/Pages/Fdetails.jsx';
 
 const MyRouter = () => {
