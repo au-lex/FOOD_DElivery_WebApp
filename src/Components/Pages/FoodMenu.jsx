@@ -51,7 +51,7 @@ const closeModal = () => {
 
   const [currentPage, setCurrentPage] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
-  const [pageL, setPageL] = useState(false); // Add this line
+  const [pageL, setPageL] = useState(false); 
 
   const handlePageChange = (selectedPage) => {
     setIsLoading(true);
@@ -256,7 +256,7 @@ return (
         key={indx}
         className='h-[220px] w-[160px] mx-2 shadow-xl   my-4  border rounded-[10px] ' // Set a fixed height and width for each section
       >
-        <div  onClick={() => navigate(`/Menu/${prod.title.split(' ').join('-')}`)} className='flex mx-[0rem] border rounded-[20px]'>
+        <div  onClick={() => navigate(`/Menu/${prod.id}`)} className='flex mx-[0rem] border rounded-[20px]'>
           <img
             src={prod.img}
             alt=""
