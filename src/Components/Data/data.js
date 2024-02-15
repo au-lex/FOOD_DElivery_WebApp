@@ -11,7 +11,7 @@ const data = [
     newPrice: "2500",
     company: "Nike",
     color: "white",
-    category: "sneakers",
+    category: "sn",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const data = [
     newPrice: "2000",
     company: "Nike",
     color: "red",
-    category: "sneakers",
+    category: "sn",
   },
 
   {
@@ -36,7 +36,7 @@ const data = [
     newPrice: "2800",
     company: "Nike",
     color: "green",
-    category: "sneakers",
+    category: "sn",
   },
   {
     id: 4,
