@@ -24,7 +24,7 @@ const MyRouter = () => {
     <Route path ='/Contact'  element= { <Contact/>} />, 
     <Route path ='/Menu/:foodId'  element= {<Fdetails />} />, 
     <Route path ='/Menu/similar/:simiFoodId'  element= {<SimilarFood />} />, 
-    <Route path ='/'  element= {<App />} />, 
+   
     </Routes>
     </BrowserRouter>
   )
