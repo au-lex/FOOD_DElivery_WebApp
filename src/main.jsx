@@ -10,6 +10,7 @@ import About from './Components/Pages/About.jsx';
 import Contact from './Components/Pages/Contact.jsx';
 
 import Fdetails from './Components/Pages/Fdetails.jsx';
+import SimilarFood from './Components/Pages/SimilarFood.jsx';
 
 const MyRouter = () => {
   
@@ -22,6 +23,7 @@ const MyRouter = () => {
     <Route path ='/Abt'  element= {<About />} />, 
     <Route path ='/Contact'  element= { <Contact/>} />, 
     <Route path ='/Menu/:foodId'  element= {<Fdetails />} />, 
+    <Route path ='/Menu/similar/:simiFoodId'  element= {<SimilarFood />} />, 
     <Route path ='/'  element= {<App />} />, 
     </Routes>
     </BrowserRouter>
