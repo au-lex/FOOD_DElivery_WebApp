@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { FaStar, FaHeart, FaRegHeart, FaArrowLeft } from 'react-icons/fa';
 import foodData from "../Data/data";
 import HeaderFooter from '../HeaderFooter';
+import Footer from '../Footer';
 
 const Fdetails = () => {
     const {foodId} = useParams();
@@ -72,22 +73,37 @@ const Fdetails = () => {
                 </section>
             </div>
             )}
+
+            {/* similar food */}
             <div className="mt-8">
-                         <h2 className="text-xl font-bold mb-[20rem]">Similar Foods</h2>
-                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                              {similarFoods.map(similarFood => (
-                                <Link to={`/Menu/${similarFood.id}`}>
-                                    <div key={similarFood.id} className="border rounded-md p-4">
-                                        <img src={similarFood.img} alt={similarFood.title} className="w-full h-40 object-cover mb-2 rounded-md" />
-                                        <h3 className="text-lg font-bold mb-1">{similarFood.title}</h3>
-                                        <p className="text-sm text-gray-600">{similarFood.category}</p>
-                                    </div>
-                                    </Link>
-                               ))}
-                               </div>
-                                  </div>
+  <h2 className="text-2xl font-bold mb-4 text-gray-800 ml-5">Similar Foods</h2>
+  <div className="flex flex-wrap justify-center space-x-4">
+    {similarFoods.map(similarFood => (
+      <Link to={`/Menu/similar/${similarFood.id}`} key={similarFood.id}>
+        <div className="relative group ">
+          <img src={similarFood.img} alt={similarFood.title} className="w-[10rem] border-2
+           border-orange-500 shadow-md h-[10rem] object-cover rounded-full" />
+          <div className="absolute inset-0 flex h-[10rem] border-4 border-red-500
+           rounded-full items-center justify-center opacity-0 bg-black bg-opacity-50 
+           group-hover:opacity-100 transition duration-300">
+            <button className="bg-white text-gray-800 px-4 py-2 rounded hover:bg-gray-200 transition duration-300">View</button>
+          </div>
+          <div className="p-4">
+            
+          </div>
+        </div>
+      </Link>
+    ))}
+  </div>
+</div>
+
+
 
             <HeaderFooter />
+            <div className='mt-[-2rem]'>
+
+            <Footer />
+            </div>
         </main>
     );
 };
