@@ -1,3 +1,5 @@
+/* eslint-disable react-refresh/only-export-components */
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes,Route
@@ -11,6 +13,7 @@ import Contact from './Components/Pages/Contact.jsx';
 
 import Fdetails from './Components/Pages/Fdetails.jsx';
 import SimilarFood from './Components/Pages/SimilarFood.jsx';
+import Favourite from './Components/Pages/Favourite.jsx';
 
 const MyRouter = () => {
   
@@ -22,6 +25,8 @@ const MyRouter = () => {
     <Route path ='/Menu'  element= {<FoodMenu />} />, 
     <Route path ='/Abt'  element= {<About />} />, 
     <Route path ='/Contact'  element= { <Contact/>} />, 
+    <Route path ='/saved'  element= { <Favourite />} /> ,
+      {/* // pass through parameter foodname using the useParams() hook */}
     <Route path ='/Menu/:foodId'  element= {<Fdetails />} />, 
     <Route path ='/Menu/similar/:simiFoodId'  element= {<SimilarFood />} />, 
    
