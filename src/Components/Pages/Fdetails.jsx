@@ -1,3 +1,8 @@
+/* eslint-disable no-unused-vars */
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css';
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { FaStar, FaHeart, FaRegHeart, FaArrowLeft } from 'react-icons/fa';
@@ -38,8 +43,8 @@ const Fdetails = () => {
             {food && (
             <div className=" items-center">
                
-                <div className="flex justify-center mb-2">
-                    <img src={food.img} alt={food.title} className="rounded-lg w-80 h-64 object-cover" />
+                <div className="flex justify-center mb-2 px-[1rem]">
+                    <img src={food.img} alt={food.title} className="rounded-lg w-full h-[350px] object-cover" />
                 </div>
 
                 <section className="sec px-[1rem]">
@@ -74,29 +79,56 @@ const Fdetails = () => {
             </div>
             )}
 
+{/* similarfood */}
+
+
+
+
+<div className="smillarFood_swiper px-[1rem] z-20 mt-5">
+
+
+
+
             {/* similar food */}
-            <div className="mt-8">
-  <h2 className="text-2xl font-bold mb-4 text-gray-800 ml-5">Similar Foods</h2>
-  <div className="flex flex-wrap justify-center space-x-4">
+
+            <h2 className="text-2xl font-bold mb-4 text-gray-800 ">Similar Foods</h2>
+
+
+
+
+
+            <Swiper
+     
+     modules={[Navigation, Pagination, A11y]}
+     spaceBetween={1}
+     slidesPerView={3.5}
+     
+     onSwiper={(swiper) => console.log(swiper)}
+     onSlideChange={() => console.log('slide change')}
+   >
+
+    
+  <div className="flex justify-between space-x-3 z-20 ">
     {similarFoods.map(similarFood => (
-      <Link to={`/Menu/similar/${similarFood.id}`} key={similarFood.id}>
-        <div className="relative group ">
-          <img src={similarFood.img} alt={similarFood.title} className="w-[10rem] border-2
-           border-orange-500 shadow-md h-[10rem] object-cover rounded-full" />
-          <div className="absolute inset-0 flex h-[10rem] border-4 border-red-500
-           rounded-full items-center justify-center opacity-0 bg-black bg-opacity-50 
-           group-hover:opacity-100 transition duration-300">
-            <button className="bg-white text-gray-800 px-4 py-2 rounded hover:bg-gray-200 transition duration-300">View</button>
-          </div>
-          <div className="p-4">
-            
-          </div>
-        </div>
+        <div key={similarFood.id} className=" z-10">
+          <SwiperSlide>
+            <Link to={`/Menu/similar/${similarFood.id}`} key={similarFood.id}>
+          <span className='block w-[80px] h-[120px] z-10 '>
+            <img
+              className=" w-full h-[80px] z-10 object-cover rounded-full"
+              src={similarFood.img}
+              alt={similarFood.title}
+            />
+            <h1 className="text-[12px] font-bold text-center mt-1">{similarFood.title}</h1>
+          </span>
       </Link>
+    </SwiperSlide>
+        </div>
     ))}
   </div>
-</div>
+   </Swiper>
 
+</div>
 
 
             <HeaderFooter />

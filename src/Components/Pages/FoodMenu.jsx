@@ -1,13 +1,14 @@
+/* eslint-disable no-unused-vars */
 
 import React, { useState, useEffect } from 'react';
 import ReactPaginate from 'react-paginate';
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { FaStar, FaHeart, FaRegHeart } from 'react-icons/fa';
 import { FaCirclePlus } from "react-icons/fa6";
-import { IoCart } from "react-icons/io5";
-import { FaBagShopping } from "react-icons/fa6";
+// import { IoCart } from "react-icons/io5";
+// import { FaBagShopping } from "react-icons/fa6";
 import data from '../Data/data';
-import bb from '../../assets/images/bgg.jpg'
+// import bb from '../../assets/images/bgg.jpg'
 import HeaderFooter from "../HeaderFooter";
 import { FcSearch } from "react-icons/fc";
 import Footer from '../Footer';
@@ -69,7 +70,7 @@ const closeModal = () => {
 return (
 
 
-    <main main className="bg-white pt-[1rem] ">
+    <main  className="bg-white pt-[1rem] ">
 
 <div className="cartHa px-[1rem]">
 <div className=" flex  justify-between mb-4 bg-white 
@@ -102,7 +103,7 @@ return (
 
     
     <form className="px-[1rem]"> 
-  <label class="block relative">
+  <label className="block relative">
     <span className="absolute left-[1rem] top-2">
 
   <FcSearch className="text-[1.8rem]" />
@@ -111,7 +112,7 @@ return (
      onClick={openModal}
     value={Search}
     onChange={(e) => Setsearch(e.target.value)}
-    placeholder="Search all meals......" type="text" class="mt-1 
+    placeholder="Search all meals......" type="text" className="mt-1 
     block w-full px-3 py-2 pl-[4rem] 
     text-[21px]
      bg-white border border-slate-300 rounded-[40px]
@@ -124,6 +125,7 @@ return (
   </label>
  
 </form>
+{/* search container */}
 
 {isModalOpen && (
   <div className="absolute inset-0
@@ -166,7 +168,7 @@ return (
 
 
 
-
+{/* filter section */}
     <Swiper
      
       modules={[Navigation, Pagination, A11y]}
@@ -237,13 +239,8 @@ return (
       ...
     </Swiper>
 
-{/* advert banner */}
-<div className="px-4 rounded-[10px]">
+{/* food menu */}
 
-
-{/* <img src={bb} alt="" className="rounded-[10px]"/> */}
-
-</div>
 <div className="flex flex-wrap justify-center mt-[1rem] ">
   {isLoading ? (
     // Loader component
@@ -291,7 +288,7 @@ return (
 </div>
 
 
-  
+  {/* pagination container */}
 <div className='px-[2rem] '>
   
   {/* Pagination component */}
