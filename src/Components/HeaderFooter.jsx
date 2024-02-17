@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import { TbSmartHome } from "react-icons/tb";
 import { FaRegHeart } from "react-icons/fa6";
@@ -14,7 +15,7 @@ const HeaderFooter = () => {
 <section className=" flex justify-center my:px-[10rem]">
 
 
-<div className=" hf backdrop-blur-[15px]   w-[95%] rounded-[5px]   h-[4rem] fixed bottom-0 ">
+<div className=" hf backdrop-blur-[15px] z-50  w-[95%] rounded-[5px]   h-[4rem] fixed bottom-0 ">
 
 <ul   className='flex justify-between px-[1rem]    pt-[.8rem]'>
 
