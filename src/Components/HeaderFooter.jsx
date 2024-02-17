@@ -30,7 +30,7 @@ const HeaderFooter = () => {
 
 
 <span className='relative'  >
-              
+<Link to={'/saved'}>   
 < FaRegHeart   className='text-[1.8rem]
                text-slate-100 cursor-pointer'     />
             
@@ -38,6 +38,7 @@ const HeaderFooter = () => {
              left-[1.4rem] text-white text-[14px]'>
             2
             </span>
+            </Link>
             </span>
 
 </li>
