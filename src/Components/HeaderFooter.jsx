@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import { TbSmartHome } from "react-icons/tb";
@@ -8,7 +9,9 @@ import { FcSearch } from "react-icons/fc";
 
 import { Link } from 'react-router-dom';
 
-const HeaderFooter = () => {
+const HeaderFooter = ({ totalFavoriteProducts  }) => {
+  
+
   return (
     <div>
 
@@ -36,7 +39,7 @@ const HeaderFooter = () => {
             
             <span className='bg-red-500 top-0 pl-[8px] pt-[.5px] h-6 w-6 absolute rounded-full
              left-[1.4rem] text-white text-[14px]'>
-            2
+         { totalFavoriteProducts }
             </span>
             </Link>
             </span>
