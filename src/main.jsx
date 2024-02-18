@@ -32,6 +32,7 @@ const MyRouter = () => {
     <Route path ='/Menu/similar/:simiFoodId'  element= {<SimilarFood   setFavouriteProducts={setFavouriteProducts}/>} />, 
    
     </Routes>
+    
     </BrowserRouter>
   )
 }

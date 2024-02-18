@@ -56,7 +56,7 @@ const Fdetails = ({ setFavouriteProducts }) => {
             <div className=" items-center">
                
                 <div className="flex justify-center mb-2 px-[1rem]">
-                    <img src={food.img} alt={food.title} className="rounded-lg w-full h-[350px] object-cover" />
+                    <img src={food.img} alt={food.title} className="rounded-lg w-full h-[280px] object-cover" />
                 </div>
 
                 <section className="sec px-[1rem]">
@@ -73,7 +73,7 @@ const Fdetails = ({ setFavouriteProducts }) => {
                     ) : (
                         <FaRegHeart className="text-red-500 text-[2rem]  cursor-pointer" onClick={toggleFavorite} />
                     )}
-                    {/* <p className="ml-2">{isFavorite ? 'Saved!' : 'Save for Later'}</p> */}
+                   
                 </div>
                     <p className="text-[2rem] text-orange-400 font-bold">${food.newPrice}</p>
                     

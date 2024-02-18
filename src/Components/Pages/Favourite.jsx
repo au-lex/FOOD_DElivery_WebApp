@@ -6,6 +6,8 @@ import HeaderFooter from '../HeaderFooter';
 import Header from '../Header';
 
 const Favourite = ({ favouriteProducts}) => {
+    const totalFavoriteProducts = favouriteProducts.length;
+
   return (
     <div className="containr">
         {/* <Header />/ */}
@@ -21,7 +23,7 @@ const Favourite = ({ favouriteProducts}) => {
         ))}
       </div>
 
-      <HeaderFooter />
+      <HeaderFooter totalFavoriteProducts={totalFavoriteProducts} />
     </div>
   );
 };
