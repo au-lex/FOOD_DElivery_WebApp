@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -10,7 +11,7 @@ import foodData from "../Data/data";
 import HeaderFooter from '../HeaderFooter';
 import Footer from '../Footer';
 
-const Fdetails = () => {
+const Fdetails = ({ setFavouriteProducts }) => {
     const {foodId} = useParams();
     const [food, Setfood] =useState(null)
     const [similarFoods, setSimilarFoods] = useState([]);
@@ -30,9 +31,20 @@ const Fdetails = () => {
     const [isFavorite, setIsFavorite] = useState(false);
 
    
+
+
     const toggleFavorite = () => {
-        setIsFavorite(prev => !prev);
-    };
+      setIsFavorite(prev => !prev);
+      if (!isFavorite) {
+          console.log("Adding to favorites:", food);
+          setFavouriteProducts(prev => [...prev, food]);
+      } else {
+          console.log("Removing from favorites:", food);
+          // Remove the product from favorites
+          setFavouriteProducts(prev => prev.filter(item => item.id !== food.id));
+      }
+  };
+  
 
     return (
         <main className="continer pt-2 pb-[2rem]  ">
