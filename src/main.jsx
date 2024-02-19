@@ -14,13 +14,15 @@ import Contact from './Components/Pages/Contact.jsx';
 import Fdetails from './Components/Pages/Fdetails.jsx';
 import SimilarFood from './Components/Pages/SimilarFood.jsx';
 import Favourite from './Components/Pages/Favourite.jsx';
+import Loader from './Components/Loader.jsx';
 
 const MyRouter = () => {
+
  const [favouriteProducts, setFavouriteProducts] = useState([]);
 
   return (
     <BrowserRouter>
-    
+ 
     <Routes>
     <Route path ='/'  element= {<App />} />, 
     <Route path ='/Menu'  element= {<FoodMenu />} />, 

@@ -18,7 +18,7 @@ const HeaderFooter = ({ totalFavoriteProducts  }) => {
 <section className=" flex justify-center my:px-[10rem]">
 
 
-<div className=" hf backdrop-blur-[15px] z-50  w-[95%] rounded-[5px]   h-[4rem] fixed bottom-0 ">
+<div className=" hf backdrop-blur-[15px] z-40  w-[95%] rounded-[5px]   h-[4rem] fixed bottom-0 ">
 
 <ul   className='flex justify-between px-[1rem]    pt-[.8rem]'>
 

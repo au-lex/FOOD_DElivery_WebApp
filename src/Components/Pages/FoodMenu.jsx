@@ -20,6 +20,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
+import Loader from '../Loader';
 //
 const itemsPerPage = 10;
 
@@ -68,14 +69,15 @@ const closeModal = () => {
   const currentItems = data.slice(offset, offset + itemsPerPage);
 
 return (
-
+<>
+<Loader />
 
     <main  className="bg-white pt-[1rem] ">
 
 <div className="cartHa px-[1rem]">
 <div className=" flex  justify-between mb-4 bg-white 
   backdrop-blur-[15px] bg-opacity-80  shadow-md fixed h-[5rem] 
-  pt-[.7rem] w-full z-50 px-2 top-0 left-0 right-0
+  pt-[.7rem] w-full z-40 px-2 top-0 left-0 right-0
 ">
   <div  className='image flex pt-1'>
 
@@ -312,6 +314,7 @@ return (
 <HeaderFooter />
 
     </main>
+    </>
   );
 };
 

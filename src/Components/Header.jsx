@@ -44,7 +44,7 @@ const Header = () => {
     
 <div className={`sidebar w-[100%] lg:hidden
  pt-[2rem]  px-[1rem] fixed ${openSidebar ? "active": ""} 
-  bg-white a z-50 top-0  min-h-full`}>
+  bg-white a z-40 top-0  min-h-full`}>
 <section className='flex'>
 
     <div className="logo w-[60px] h-[50px]">
