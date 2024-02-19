@@ -10,6 +10,7 @@ import { FaStar, FaHeart, FaRegHeart, FaArrowLeft } from 'react-icons/fa';
 import foodData from "../Data/data";
 import HeaderFooter from '../HeaderFooter';
 import Footer from '../Footer';
+import Loader from '../Loader';
 
 const Fdetails = ({ setFavouriteProducts }) => {
     const {foodId} = useParams();
@@ -30,9 +31,6 @@ const Fdetails = ({ setFavouriteProducts }) => {
 
     const [isFavorite, setIsFavorite] = useState(false);
 
-   
-
-
     const toggleFavorite = () => {
       setIsFavorite(prev => !prev);
       if (!isFavorite) {
@@ -48,6 +46,7 @@ const Fdetails = ({ setFavouriteProducts }) => {
 
     return (
         <main className="continer pt-2 pb-[2rem]  ">
+            <Loader />
            
             <Link to="/Menu" className="text-gray-600 bg-white shadow-md w-8 h-8  p-2 ml-[1rem]  rounded-full  hover:text-gray-800 flex items-center mb-4">
                 <FaArrowLeft className="ml-[.4px] text-[3rem] cursor-pointer" /> 
@@ -98,7 +97,7 @@ const Fdetails = ({ setFavouriteProducts }) => {
 
 <div className="smillarFood_swiper px-[1rem] z-20 mt-5">
 
-
+<Loader />
 
 
             {/* similar food */}

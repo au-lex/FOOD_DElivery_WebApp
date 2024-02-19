@@ -12,6 +12,7 @@ import { FaStar, FaHeart, FaRegHeart, FaArrowLeft } from 'react-icons/fa';
 import foodData from "../Data/data";
 import HeaderFooter from '../HeaderFooter';
 import Footer from '../Footer';
+import Loader from '../Loader';
 
 
 
@@ -43,6 +44,8 @@ const SimilarFood = () => {
     };
 
     return (
+        <>
+        <Loader />
          <main className="continer pt-2 pb-[2rem]  ">
            
             <Link to="/Menu" className="text-gray-600 bg-white shadow-md w-8 h-8  p-2 ml-[1rem]  rounded-full  hover:text-gray-800 flex items-center mb-4">
@@ -93,7 +96,7 @@ const SimilarFood = () => {
 
 
 
-
+<Loader />
             {/* similar food */}
 
             <h2 className="text-2xl font-bold mb-4 text-gray-800 ">Similar Foods</h2>
@@ -146,6 +149,7 @@ const SimilarFood = () => {
             <Footer />
             </div>
         </main>
+        </>
     );
 };
 
