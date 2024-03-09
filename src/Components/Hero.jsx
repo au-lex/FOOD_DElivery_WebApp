@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { IoIosStar, IoIosStarHalf } from "react-icons/io";
 import {GiHotMeal} from "react-icons/gi";
 import { FaStar } from "react-icons/fa6";
-
+import { Link } from 'react-router-dom';
 const Hero = () => {
 
     
@@ -24,8 +24,11 @@ Indulge in a world of flavors with <span className='text-yellow-900 text-[1.5rem
  local restaurants for an extraordinary dining experience.</p>
 
  <div className="btn_order ">
+
+    <Link to = '/Menu'>
     <button className='bg-yellow-500 w-[100%] h-[3.5rem] rounded-[10px]
      text-slate-100 text-[18px] uppercase font-semibold cursor-pointer'>order now</button>
+     </Link>
  </div>
 </figcaption>
    
