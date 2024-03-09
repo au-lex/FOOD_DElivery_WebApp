@@ -5,10 +5,10 @@ import ReactPaginate from 'react-paginate';
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { FaStar, FaHeart, FaRegHeart } from 'react-icons/fa';
 import { FaCirclePlus } from "react-icons/fa6";
-// import { IoCart } from "react-icons/io5";
-// import { FaBagShopping } from "react-icons/fa6";
+
+
 import data from '../Data/data';
-// import bb from '../../assets/images/bgg.jpg'
+
 import HeaderFooter from "../HeaderFooter";
 import { FcSearch } from "react-icons/fc";
 import Footer from '../Footer';
@@ -24,7 +24,7 @@ import Loader from '../Loader';
 //
 const itemsPerPage = 10;
 
-const FoodMenu = () => {
+const FoodMenu = ({totalFavoriteProducts}) => {
 const [Search, Setsearch] = useState('');
 const [FiterData, SetFiterData] = useState(data);
 
@@ -311,7 +311,7 @@ return (
 {/* menu-footer */}
 <Footer className = 'mt-[-4rem]'/>
 
-<HeaderFooter />
+<HeaderFooter totalFavoriteProducts={totalFavoriteProducts} />
 
     </main>
     </>

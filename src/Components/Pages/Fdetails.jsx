@@ -12,7 +12,7 @@ import HeaderFooter from '../HeaderFooter';
 import Footer from '../Footer';
 import Loader from '../Loader';
 
-const Fdetails = ({ setFavouriteProducts }) => {
+const Fdetails = ({ setFavouriteProducts , totalFavoriteProducts }) => {
     const {foodId} = useParams();
     const [food, Setfood] =useState(null)
     const [similarFoods, setSimilarFoods] = useState([]);
@@ -142,7 +142,7 @@ const Fdetails = ({ setFavouriteProducts }) => {
 </div>
 
 
-            <HeaderFooter />
+<HeaderFooter totalFavoriteProducts={totalFavoriteProducts} />
             <div className='mt-[-2rem]'>
 
             <Footer />
